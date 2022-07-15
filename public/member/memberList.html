@@ -9,185 +9,128 @@
 
 <body>
  
+<!-- header  -->
 <div class="container-fluid">
 	<nav class="navbar bg-light">
-	  <div class="container-fluid">
 	    <a class="navbar-brand" href="#">
-	      <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-	      Bootstrap
-	    </a>
-	  </div>
-	</nav>
-	<div class="container-md">
+	      <img src="../image/megabox_light.png" alt="" width="200px" height="50"></a>
+	  <form class="d-flex" role="link">
+	  	<button class="btn btn-success me-2" type="button">로그인</button>
+  	</form>
+	</nav><br>
+	<ul class="nav nav-tabs">
+		<li class="nav-item">
+	 		<a class="nav-link active" aria-current="page" href="#">회원관리</a>
+	 	</li>
+	 	<li class="nav-item">
+	  		<a class="nav-link" href="#">코드그룹관리</a>
+	 	</li>
+	 	<li class="nav-item">
+	 		<a class="nav-link" href="#">코드관리</a>
+	 	</li>
+	</ul><br>
+</div>
+<div class="container-lg">
+	<img src="../image/building2.png" alt="">
+</div><hr>
+
+<div class="container-sm">
+	<form role="search">
 		<div class="row g-2">
-			<div class="col-md">
-				<div class="form-floating">
-					<input type="text" class="form-control" id="nameSrc" style="width: 40%">
-					<label for="nameSrc">이름</label>
-					<button class="btn btn-outline-secondary" type="button" id="nameSrc">검색</button> 
-				</div>
+			<div class="col">
+				<input class="form-control me-2" type="search" placeholder="" aria-label="Search">
 			</div>
-			<div class="col-md">
-				<div class="form-floating">
-					<select class="form-select" id="gender">
-						<option value="1">남</option>
-						<option value="2">여</option>
-					</select>
-					<label for="gender">성별</label>
-				</div>
+			<div class="col">
+				<input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+			</div>
+			<div class="col">	
+				<input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+			</div>
+		</div>	
+		<div class="row g-2">
+			<div class="col-4">
+				<select class="form-select" id="gender">
+					<option value="0">성별</option>
+					<option value="1">남</option>
+					<option value="2">여</option>
+				</select>	
+			</div>
+			<div class="col-4">	
+				<input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+			</div>
+			<div class="col-1">
+				<button class="btn btn-outline-success" type="submit">Search</button>
+			</div>
+			<div class="col-1">
+				<button class="btn btn-outline-danger" type="reset">
+					<i class="fa-solid fa-delete-left"></i>
+				</button>
 			</div>
 		</div>
+	</form>
+</div><br>
 		
-	
-	
-	
-	
-	
-	
-	
-	</div>		
-
-	
-	<div class="container float-start p-2">
-		<div class="row">
-			<div class="col-2 border-end" >
-				<ul class="nav flex-column">
-					<li class="nav-item">
-				 		<a class="nav-link active" aria-current="page" href="#">회원관리</a>
-				 	</li>
-				 	<li class="nav-item">
-				  		<a class="nav-link" href="#">회원등록</a>
-				 	</li>
-				 	<li class="nav-item">
-				 		<a class="nav-link" href="#">마이페이지</a>
-				 	</li>
-				 	<li class="nav-item">
-				 		<a class="nav-link disabled">Disabled</a>
-				 	</li>
-				</ul>
-			</div>
-			<div class="col-10">
-				<table class="table table-striped table-bordered table-hover">
-					<thead class="table-primary">
-						<tr>
-							<td></td>
-							<td>번호</td>
-							<td>이름</td>
-							<td>성별</td>
-							<td>생년월일</td>
-							<td>이메일</td>
-							<td>휴대폰번호</td>
-							<td>주소</td>
-						</tr>	
-					</thead>
-					<tbody>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>	
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>	
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>	
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>	
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>	
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>	
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>	
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>		
-					</tbody>
-				</table>
-			</div>
-		</div>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-	<nav aria-label="Page navigation example" style="clear: both;">
-		<ul class="pagination justify-content-end">
+<div class="container-fluid">
+	<table class="table table-striped table-bordered table-hover">
+		<thead class="table-info">
+			<tr>
+				<td>
+				  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="">
+				</td>
+				<td>번호</td>
+				<td>이름</td>
+				<td>성별</td>
+				<td>생년월일</td>
+				<td>이메일</td>
+				<td>휴대폰번호</td>
+				<td>직무</td>
+				<td>주소</td>
+			</tr>	
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="">
+				</td>
+				<td>1</td>
+				<td>고명지</td>
+				<td>여</td>
+				<td>940608</td>
+				<td>mungjee08@naver.com</td>
+				<td>010-2838-8611</td>
+				<td>개발</td>
+				<td>경기도 남양주시</td>
+			</tr>
+			<tr>
+				<td>
+					<input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="">
+				</td>
+				<td>2</td>
+				<td>박지원</td>
+				<td>여</td>
+				<td>961120</td>
+				<td>jiwooon@gmail.com</td>
+				<td>010-2346-6998</td>
+				<td>마켓팅</td>
+				<td>서울특별시 강서구</td>
+			</tr>	
+			<tr>
+				<td>
+					<input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="">
+				</td>
+				<td>3</td>
+				<td>김도영</td>
+				<td>남</td>
+				<td>960201</td>
+				<td>do_0@gmail.com</td>
+				<td>010-2785-8533</td>
+				<td>개발</td>
+				<td>경기도 구리시</td>
+			</tr>	
+		</tbody>
+	</table>
+	<nav aria-label="Page navigation example">
+		<ul class="pagination justify-content-center">
 			<li class="page-item">
 				<a class="page-link" href="#" aria-label="Previous">
 					<span aria-hidden="true">&laquo;</span>
@@ -203,25 +146,53 @@
 			</li>
 		</ul>
 	</nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>	
+		
+		
+	
+	<div class="d-grid gap-2 d-md-block">
+		<button class="btn btn-outline-success" type="button">
+			<i class="fa-solid fa-file-arrow-down"></i>
+		</button>
+		<button class="btn btn-outline-danger" type="button">
+			<i class="fa-solid fa-trash-can"></i>
+		</button>
+		<button class="btn btn-outline-primary" type="button">
+			<i class="fa-solid fa-user-plus"></i>
+		</button>
+	</div>
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+
+				
+		
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/47516a9c09.js" crossorigin="anonymous"></script>
+	
 </body>
 </html>
