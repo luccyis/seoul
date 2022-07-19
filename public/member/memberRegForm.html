@@ -111,14 +111,14 @@
 			</div>
 		</div>			
 	
-		<div class="col-10">
+		<div class="col-10 p-2">
 			<div class="row">
 				<div class="col-12">
 					<span>
 						<i class="fa-solid fa-circle-user"></i>
 						회원정보
 					</span><hr>
-					<span>기본정보</span>
+					<span class="d-block p-2">기본정보</span>
 				</div><br>
 				<div class="col-3 g-0">
 					<span class="d-block p-2 border" style="height: 56px;">아이디</span>
@@ -126,6 +126,7 @@
 					<span class="d-block p-2 border" style="height: 56px;">비밀번호확인</span>
 					<span class="d-block p-2 border" style="height: 56px;">회원등급</span>
 					<span class="d-block p-2 border" style="height: 56px;">이름</span>
+					<span class="d-block p-2 border" style="height: 56px;">성별</span>
 					<span class="d-block p-2 border" style="height: 56px;">생년월일</span>
 					<span class="d-block p-2 border" style="height: 56px;">핸드폰번호</span>
 					<span class="d-block p-2 border" style="height: 56px;">SMS 수신여부</span>
@@ -134,21 +135,27 @@
 					<span class="d-block p-2 border" style="height: 56px;">우편번호</span>
 					<span class="d-block p-2 border" style="height: 56px;">주소</span>
 				</div>
-				<div class="col-4 g-0">
-					<span class="d-block p-2 border">
-						<input type="text" class="form-control inline">
-					</span>
-				</div>
-				<div class="col-5 g-0">
-					<span class="d-block p-2 border">
-						(영문소문자/숫자, 4~16자)
-					</span>
-				</div>
 				<div class="col-9 g-0">
-					
-					<span class="d-block p-2 border">
-						<input type="password" class="form-control" id="inputPassword">
-					</span>
+					<div class="row g-0 align-items-center border" style="height: 56px;">
+						<div class="col-3 px-2">
+							<input type="text" id="inputId" class="form-control" aria-describedby="idtHelpInline"> 
+						</div>	
+						<div class="col px-2">
+							<span id="idtHelpInline" class="form-text">
+								(영문소문자/숫자, 4~16자)
+							</span>
+						</div>
+					</div>	
+					<div class="row g-0 align-items-center border" style="height: 56px;">
+						<div class="col-5 px-2">
+							<input type="password" id="inputPassword" class="form-control" aria-describedby="passowordHelpInline"> 
+						</div>	
+						<div class="col px-2">
+							<span id="passwordHelpInline" class="form-text">
+								(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8자~16자)
+							</span>
+						</div>
+					</div>	
 					<span class="d-block p-2 border">
 						<input type="password" class="form-control" id="passwordRe">
 					</span>
@@ -158,21 +165,109 @@
 					<span class="d-block p-2 border">
 						<input type="text" class="form-control">
 					</span>
-					<span class="d-block p-2 border">
-						<input type="text" class="form-control">
+					<span class="d-block p-2 border" style="height: 56px;">
+						<input class="form-check-input" type="radio" name="inputGender" id="male" checked>
+						남
+						<input class="form-check-input" type="radio" name="inputGender" id="female">
+						여
 					</span>
-					<span class="d-block p-2 border">
-						<input type="text" class="form-control">
-					</span>
+					<div class="row g-0 align-items-center border" style="height: 56px;">
+						<div class="col px-2">
+							<input type="text" id="inputYear" class="form-control" aria-describedby="yearHelpInline" placeholder="19xx년">
+						</div>
+						<div class="col px-2">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm month" aria-describedby="monthHelpInline">
+								<option selected>month</option>
+								<option value="1">1월</option>
+								<option value="2">2월</option>
+								<option value="3">3월</option>
+								<option value="4">4월</option>
+								<option value="5">5월</option>
+								<option value="6">6월</option>
+								<option value="7">7월</option>
+								<option value="8">8월</option>
+								<option value="9">9월</option>
+								<option value="10">10월</option>
+								<option value="11">11월</option>
+								<option value="12">12월</option>
+							</select>
+						</div>
+						<div class="col px-2">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm month" aria-describedby="dayHelpInline">
+								<option selected>day</option>
+								<option value="1">1일</option>
+								<option value="2">2일</option>
+								<option value="3">3일</option>
+								<option value="4">4일</option>
+								<option value="5">5일</option>
+								<option value="6">6일</option>
+								<option value="7">7일</option>
+								<option value="8">8일</option>
+								<option value="9">9일</option>
+								<option value="10">10일</option>
+								<option value="11">11일</option>
+								<option value="12">12일</option>
+								<option value="13">13일</option>
+								<option value="14">14일</option>
+								<option value="15">15일</option>
+								<option value="16">16일</option>
+								<option value="17">17일</option>
+								<option value="18">18일</option>
+								<option value="19">19일</option>
+								<option value="20">20일</option>
+								<option value="21">21일</option>
+								<option value="22">22일</option>
+								<option value="23">23일</option>
+								<option value="24">24일</option>
+								<option value="25">25일</option>
+								<option value="26">26일</option>
+								<option value="27">27일</option>
+								<option value="28">28일</option>
+								<option value="29">29일</option>
+								<option value="30">30일</option>
+								<option value="31">31일</option>
+							</select>
+						</div>
+					</div>
+					<div class="row g-0 align-items-center border" style="height: 56px;">
+						<div class="col-auto px-2">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm">
+								<option value="1">010</option>
+								<option value="2">011</option>
+							</select>
+						</div>
+						<div class="col-auto px-2">
+							<input type="text" id="inputTel" class="form-control" aria-describedby="teltHelpInline">
+						</div>
+						<div class="col-auto px-2">
+							<span id="telHelpInline" class="form-text">-</span>
+						</div>
+						<div class="col-auto px-2">
+							<input type="text" id="inputTel2" class="form-control" aria-describedby="tel2HelpInline">
+						</div>
+					</div>
 					<span class="d-block p-2 border" style="height: 56px;">
 						<input class="form-check-input" type="radio" name="smsMarketing" id="smsAd" checked>
 						수신함
 						<input class="form-check-input" type="radio" name="smsMarketing" id="smsNoAd">
 						수신안함
 					</span>
-					<span class="d-block p-2 border">
-						<input type="text" class="form-control">
-					</span>
+					<div class="row g-0 align-items-center border" style="height: 56px;">
+						<div class="col-5 px-2">
+							<input type="text" id="inputEmail" class="form-control" aria-describedby="emailHelpInline">
+						</div>
+						<div class="col-1 px-2">
+							<span id="emailHelpInline" class="form-conltrol">@</span>
+						</div>
+						<div class="col-6 px-2">
+							<select class="form-select" aria-label=".form-select email">
+								<option selected>email address</option>
+								<option value="1">gmail.com</option>
+								<option value="2">naver.com</option>
+								<option vlaue="3">daum.net</option>
+							</select>
+						</div>
+					</div>	
 					<span class="d-block p-2 border" style="height: 56px;">
 						<input class="form-check-input" type="radio" name="emailMarketing" id="emailAd" checked>
 						수신함
