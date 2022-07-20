@@ -120,20 +120,28 @@
 					</span><hr>
 					<span class="d-block p-2">기본정보</span>
 				</div><br>
+				<div class="row g-0">
+					<div class="col-3 g-0">
+						<span class="d-block p-2 border">프로필사진</span>
+					</div>
+					<div class="col-9 g-0 border">
+						<input class="form-control" id="formFileSm" type="file">
+					</div>
+				</div>
 				<div class="col-3 g-0">
-					<span class="d-block p-2 border" style="height: 56px;">아이디</span>
-					<span class="d-block p-2 border" style="height: 56px;">비밀번호</span>
-					<span class="d-block p-2 border" style="height: 56px;">비밀번호확인</span>
-					<span class="d-block p-2 border" style="height: 56px;">회원등급</span>
-					<span class="d-block p-2 border" style="height: 56px;">이름</span>
-					<span class="d-block p-2 border" style="height: 56px;">성별</span>
-					<span class="d-block p-2 border" style="height: 56px;">생년월일</span>
-					<span class="d-block p-2 border" style="height: 56px;">핸드폰번호</span>
-					<span class="d-block p-2 border" style="height: 56px;">SMS 수신여부</span>
-					<span class="d-block p-2 border" style="height: 56px;">이메일주소</span>
-					<span class="d-block p-2 border" style="height: 56px;">이메일 수신여부</span>
-					<span class="d-block p-2 border" style="height: 56px;">우편번호</span>
-					<span class="d-block p-2 border" style="height: 56px;">주소</span>
+					<span class="d-block p-2 border align-self-center" style="height: 56px;">아이디</span>
+					<span class="d-block p-2 border align-self-center" style="height: 56px;">비밀번호</span>
+					<span class="d-block p-2 border align-self-center" style="height: 56px;">비밀번호확인</span>
+					<span class="d-block p-2 border align-self-center" style="height: 56px;">회원등급</span>
+					<span class="d-block p-2 border align-self-center" style="height: 56px;">이름</span>
+					<span class="d-block p-2 border align-self-center" style="height: 56px;">성별</span>
+					<span class="d-block p-2 border align-self-center" style="height: 56px;">생년월일</span>
+					<span class="d-block p-2 border align-self-center" style="height: 56px;">핸드폰번호</span>
+					<span class="d-block p-2 border align-self-center" style="height: 56px;">SMS 수신여부</span>
+					<span class="d-block p-2 border align-self-center" style="height: 56px;">이메일주소</span>
+					<span class="d-block p-2 border align-self-center" style="height: 56px;">이메일 수신여부</span>
+					<span class="d-block p-2 border align-self-center" style="height: 56px;">우편번호</span>
+					<span class="d-block p-2 border align-self-center" style="height: 56px;">주소</span>
 				</div>
 				<div class="col-9 g-0">
 					<div class="row g-0 align-items-center border" style="height: 56px;">
@@ -281,10 +289,33 @@
 						<input type="text" class="form-control">
 					</span>
 				</div>
-				<div class="col-4 g-2">
+				<div class="col-2 g-2">
 					<button type="button" class="btn btn-success">회원정보 저장</button>
-					<button type="button" class="btn btn-danger">삭제</button>
-					<button type="button" class="btn btn-dark">목록으로</button>
+					<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="staticBackdrop">
+					삭제
+					</button>
+					<div class="madal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="staticBackdropLabel">삭제</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<h6>정말 삭제하시겠습니까?</h6>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+									<button type="button" class="btn btn-danger">삭제</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-2 g-2">	
+					<button type="button" class="btn btn-dark" onclick="location.href='memberList.html'">
+						목록으로
+					</button>
 				</div>
 			
 			
@@ -294,43 +325,24 @@
 	</div>
 </div>
 
-
-			
-	
-
-	
-	
-
-
-
-
-
+	<script type="text/javascript">
+		const staticBackdrop = document.getElementById('staticBackdrop')
+		staticBackdrop.addEventListener('show.bs.modal', event => {
+		// Button that triggered the modal
+		const button = event.relatedTarget
+		// Extract info from data-bs-* attributes
+		const recipient = button.getAttribute('data-bs-whatever')
+		// If necessary, you could initiate an AJAX request here
+		// and then do the updating in a callback.
+		//
+		// Update the modal's content.
+		const modalTitle = exampleModal.querySelector('.modal-title')
+		const modalBodyInput = exampleModal.querySelector('.modal-body input')
 		
-		
-	
-	
-	
-	
-	
-	
-	
-	
-
-				
-		
-
-	
-
-
-
-
-
-
-
-
-
-
-
+			modalTitle.textContent = `New message to ${recipient}`
+			modalBodyInput.value = recipient
+		})
+	</script>
 
 
 
