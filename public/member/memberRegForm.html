@@ -121,13 +121,14 @@
 					<span class="d-block p-2">기본정보</span>
 				</div><br>
 				<div class="row g-0">
-					<div class="col-3 g-0">
-						<span class="d-block p-2 border">프로필사진</span>
+					<div class="col-3 g-0 border">
+						<div id="image_container"></div>
+						<span class="d-block p-2">프로필사진</span>
 					</div>
 					<div class="col-9 g-0 border">
-						<input class="form-control" id="formFileSm" type="file">
+						<input class="form-control" type="file" riquired id="imageid" aria-label="file example" accept="inage/*" onchange="setThumbnail(event);">
 					</div>
-				</div>
+				</div>	
 				<div class="col-3 g-0">
 					<span class="d-block p-2 border align-self-center" style="height: 56px;">아이디</span>
 					<span class="d-block p-2 border align-self-center" style="height: 56px;">비밀번호</span>
@@ -181,7 +182,7 @@
 					</span>
 					<div class="row g-0 align-items-center border" style="height: 56px;">
 						<div class="col px-2">
-							<input type="text" id="inputYear" class="form-control" aria-describedby="yearHelpInline" placeholder="19xx년">
+							<input type="text" id="inputYear" class="form-control" aria-describedby="yearHelpInline" placeholder="ex)19xx년">
 						</div>
 						<div class="col px-2">
 							<select class="form-select form-select-sm" aria-label=".form-select-sm month" aria-describedby="monthHelpInline">
@@ -343,7 +344,20 @@
 			modalBodyInput.value = recipient
 		})
 	</script>
-
+	
+<script type="text/javascript">
+	function setThumbnail(event) {
+	    var reader = new FileReader();
+	
+	    reader.onload = function(event) {
+	      var img = document.createElement("img");
+	      img.setAttribute("src", event.target.result);
+	      document.querySelector("div#image_container").appendChild(img);
+	    };
+	
+	    reader.readAsDataURL(event.target.files[0]);
+	 }
+</script>
 
 
 
