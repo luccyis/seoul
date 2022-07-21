@@ -236,60 +236,44 @@
 				<button class="btn btn-outline-success" type="button">
 					<i class="fa-solid fa-file-arrow-down"></i>
 				</button>
-				<button class="btn btn-outline-danger" type="button">
+				<button class="btn btn-outline-danger" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdropLive">
 					<i class="fa-solid fa-trash-can"></i>
 				</button>
 				<button class="btn btn-outline-primary" type="button" onclick="location.href='memberRegForm.html'">
 					<i class="fa-solid fa-user-plus"></i>
 				</button>
+				<div class="modal fade" id="staticBackdropLive" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLiveLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="staticBackdropLiveLabel">삭제</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h6 style="text-align: start;">정말 삭제하시겠습니까?</h6>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+								<button type="button" class="btn btn-danger">삭제</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-
-			
-	
-
-	
-	
-
-
-
-
-
-		
-		
-	
-	
-	
-	
-	
-	
-	
-	
-
-				
-		
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/47516a9c09.js" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		const myModal = document.getElementById('staticBackdropLive')
+		const myInput = document.getElementById('staticBackdropLiveLablel')
+		
+		myModal.addEventListener('shown.bs.modal', () => {
+			myInput.focus()
+		})
+	</script>
 	
 </body>
 </html>
