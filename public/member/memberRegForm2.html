@@ -123,21 +123,72 @@
 					</div><br>
 					<div class="row g-0">
 						<div class="col-3 g-0 border">
-						<input class="form-control" type="file" riquired id="image" aria-label="file example" accept="image/*" onchange="setThumbnail(event);">	
+							<input class="form-control" type="file" riquiredid="image" aria-label="file example" accept="image/*" onchange="setThumbnail(event);">	
 							<div class="image_container"></div>
 							<i class="fa-solid fa-circle-user"></i>
 							프로필사진
 						</div>
-						<div class="col-7 g-0 border">
-							<input class="form-control" type="file" riquired id="image" aria-label="file example" accept="image/*" onchange="setThumbnail(event);">
+						<div class="col-9 g-0 border">
+							<div class="row g-1 align-items-center">
+								<div class="col g-3">
+									<label for="grade" class="col-form-label">회원등급</label>
+								</div>
+								<div class="col g-3">
+									<input type="text" id="grade" class="form-control" aria-describedby="gradeHelpInline" disabled>
+								</div>
+							</div>
+							<div class="row g-1 align-items-center border-bottom">
+								<div class="col g-3">
+									<label for="inputId" class="col-form-laber">아이디</label>
+								</div>
+								<div class="col g-3">
+									<input type="text" id="inputId" class="form-control" aria-describedby="idHelpInline">
+									<span id="idHelpInline" class="form-text">
+										(영문소문자/숫자, 4~16자)
+									</span>
+								</div>
+							</div>
+							<div class="row g-1 align-items-center border-bottom">
+								<div class="col g-3">
+									<label for="inputPassword" class="col-form-laber">비밀번호</label>
+								</div>
+								<div class="col g-3">
+									<input type="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpInline">
+									<span id="passwordHelpInline" class="form-text">
+										(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8자~16자)
+									</span>
+								</div>
+								<div class="col g-3">
+									<label for="passwordRe" class="col-form-laber">비밀번호 확인</label>
+									<input type="password" id="passwordRe" class="form-control" aria-describedby="passwordReHelpInline">
+								</div>
+							</div>
 						</div>
-					</div>	
+					</div>
+					<div class="row g-0">
+						<div class="col g-3">
+						
+						
+						
+						</div>
+					
+					
+					
+					
+					
+					
+					
+					</div>
+					
+					
+					
+					
+					
+					
+					
+						
 					<div class="col-3 g-0">
-						<span class="d-block p-2 border align-self-center" style="height: 56px;">아이디</span>
-						<span class="d-block p-2 border align-self-center" style="height: 56px;">비밀번호</span>
-						<span class="d-block p-2 border align-self-center" style="height: 56px;">비밀번호확인</span>
-						<span class="d-block p-2 border align-self-center" style="height: 56px;">회원등급</span>
-						<span class="d-block p-2 border align-self-center" style="height: 56px;">이름</span>
+			
 						<span class="d-block p-2 border align-self-center" style="height: 56px;">성별</span>
 						<span class="d-block p-2 border align-self-center" style="height: 56px;">생년월일</span>
 						<span class="d-block p-2 border align-self-center" style="height: 56px;">핸드폰번호</span>
