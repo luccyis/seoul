@@ -129,8 +129,8 @@
 							프로필사진
 						</div>
 						<div class="col-9 g-0 border">
-							<div class="row g-1 align-items-center">
-								<div class="col g-3">
+							<div class="row g-1 align-items-center border-bottom">
+								<div class="col-2 g-3">
 									<label for="grade" class="col-form-label">회원등급</label>
 								</div>
 								<div class="col g-3">
@@ -138,212 +138,186 @@
 								</div>
 							</div>
 							<div class="row g-1 align-items-center border-bottom">
-								<div class="col g-3">
-									<label for="inputId" class="col-form-laber">아이디</label>
+								<div class="col-2 g-3">
+									<label for="inputId" class="col-form-label">아이디</label>
 								</div>
 								<div class="col g-3">
 									<input type="text" id="inputId" class="form-control" aria-describedby="idHelpInline">
-									<span id="idHelpInline" class="form-text">
+								</div>
+								<div class="col g-3">	
+									<span id="idHelpInline" class="form-text" autocomplete="off">
 										(영문소문자/숫자, 4~16자)
 									</span>
 								</div>
 							</div>
 							<div class="row g-1 align-items-center border-bottom">
-								<div class="col g-3">
-									<label for="inputPassword" class="col-form-laber">비밀번호</label>
+								<div class="col-2 g-3">
+									<label for="inputPassword" class="col-form-label">비밀번호</label>
 								</div>
 								<div class="col g-3">
 									<input type="password" id="inputPassword" class="form-control" aria-describedby="passwordHelpInline">
+								</div>
+								<div class="col g-3">	
 									<span id="passwordHelpInline" class="form-text">
 										(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8자~16자)
 									</span>
 								</div>
-								<div class="col g-3">
-									<label for="passwordRe" class="col-form-laber">비밀번호 확인</label>
-									<input type="password" id="passwordRe" class="form-control" aria-describedby="passwordReHelpInline">
+							</div>
+							<div class="row g-1 align-items-center border-bottom">	
+								<div class="col-2 g-3">
+									<label for="passwordRe" class="col-form-label">비밀번호 확인</label>
+								</div>
+								<div class="col g-3">	
+									<input type="password" id="passwordRe" class="form-control">
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="row g-0">
-						<div class="col g-3">
-						
-						
-						
+					<div class="row g-1 align-items-center border">
+						<div class="col-2 g-0 border">
+							<label for="inputGender" class="col-form-label">성별</label>
 						</div>
-					
-					
-					
-					
-					
-					
-					
-					</div>
-					
-					
-					
-					
-					
-					
-					
-						
-					<div class="col-3 g-0">
-			
-						<span class="d-block p-2 border align-self-center" style="height: 56px;">성별</span>
-						<span class="d-block p-2 border align-self-center" style="height: 56px;">생년월일</span>
-						<span class="d-block p-2 border align-self-center" style="height: 56px;">핸드폰번호</span>
-						<span class="d-block p-2 border align-self-center" style="height: 56px;">SMS 수신여부</span>
-						<span class="d-block p-2 border align-self-center" style="height: 56px;">이메일주소</span>
-						<span class="d-block p-2 border align-self-center" style="height: 56px;">이메일 수신여부</span>
-						<span class="d-block p-2 border align-self-center" style="height: 56px;">우편번호</span>
-						<span class="d-block p-2 border align-self-center" style="height: 56px;">주소</span>
-					</div>
-					<div class="col-9 g-0">
-						<div class="row g-0 align-items-center border" style="height: 56px;">
-							<div class="col-3 px-2">
-								<input type="text" id="inputId" class="form-control" aria-describedby="idtHelpInline" autocomplete="off"> 
-							</div>	
-							<div class="col px-2">
-								<span id="idtHelpInline" class="form-text">
-									(영문소문자/숫자, 4~16자)
-								</span>
-							</div>
-						</div>	
-						<div class="row g-0 align-items-center border" style="height: 56px;">
-							<div class="col-5 px-2">
-								<input type="password" id="inputPassword" class="form-control" aria-describedby="passowordHelpInline"> 
-							</div>	
-							<div class="col px-2">
-								<span id="passwordHelpInline" class="form-text">
-									(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8자~16자)
-								</span>
-							</div>
-						</div>	
-						<span class="d-block p-2 border">
-							<input type="password" class="form-control" id="passwordRe">
-						</span>
-						<span class="d-block p-2 border">
-							<input type="text" class="form-control" disabled>
-						</span>
-						<span class="d-block p-2 border">
-							<input type="text" class="form-control" autocomplete="off">
-						</span>
-						<span class="d-block p-2 border" style="height: 56px;">
-							<input class="form-check-input" type="radio" name="inputGender" id="male" checked>
-							남
-							<input class="form-check-input" type="radio" name="inputGender" id="female">
-							여
-						</span>
-						<div class="row g-0 align-items-center border" style="height: 56px;">
-							<div class="col px-2">
-								<input type="text" id="inputYear" class="form-control" aria-describedby="yearHelpInline" placeholder="ex)19xx년" autocomplete="off">
-							</div>
-							<div class="col px-2">
-								<select class="form-select form-select-sm" aria-label=".form-select-sm month" aria-describedby="monthHelpInline">
-									<option selected>month</option>
-									<option value="1">1월</option>
-									<option value="2">2월</option>
-									<option value="3">3월</option>
-									<option value="4">4월</option>
-									<option value="5">5월</option>
-									<option value="6">6월</option>
-									<option value="7">7월</option>
-									<option value="8">8월</option>
-									<option value="9">9월</option>
-									<option value="10">10월</option>
-									<option value="11">11월</option>
-									<option value="12">12월</option>
-								</select>
-							</div>
-							<div class="col px-2">
-								<select class="form-select form-select-sm" aria-label=".form-select-sm month" aria-describedby="dayHelpInline">
-									<option selected>day</option>
-									<option value="1">1일</option>
-									<option value="2">2일</option>
-									<option value="3">3일</option>
-									<option value="4">4일</option>
-									<option value="5">5일</option>
-									<option value="6">6일</option>
-									<option value="7">7일</option>
-									<option value="8">8일</option>
-									<option value="9">9일</option>
-									<option value="10">10일</option>
-									<option value="11">11일</option>
-									<option value="12">12일</option>
-									<option value="13">13일</option>
-									<option value="14">14일</option>
-									<option value="15">15일</option>
-									<option value="16">16일</option>
-									<option value="17">17일</option>
-									<option value="18">18일</option>
-									<option value="19">19일</option>
-									<option value="20">20일</option>
-									<option value="21">21일</option>
-									<option value="22">22일</option>
-									<option value="23">23일</option>
-									<option value="24">24일</option>
-									<option value="25">25일</option>
-									<option value="26">26일</option>
-									<option value="27">27일</option>
-									<option value="28">28일</option>
-									<option value="29">29일</option>
-									<option value="30">30일</option>
-									<option value="31">31일</option>
-								</select>
-							</div>
+						<div class="col-1 g-0 border-end">
+							<input class="form-check-input p-2" type="radio" name="inputGender" id="male" value="1" checked>남
+							<input class="form-check-input p-2" type="radio" name="inputGender" id="female" value="2">여
 						</div>
-						<div class="row g-0 align-items-center border" style="height: 56px;">
-							<div class="col-auto px-2">
+						<div class="col-2 g-0">
+							<label for="dob" class="col-form-label">생년월일</label>
+						</div>
+						<div class="col g-0">
+							<input type="text" class="form-control form-control-sm" id="inputYear" aria-describedby="yearHelpInline" placeholder="ex)19xx" autocomplete="off">
+						</div>
+						<div class="col g-0">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm month" aria-describedby="monthHelpInline">
+								<option selected>month</option>
+								<option value="1">1월</option>
+								<option value="2">2월</option>
+								<option value="3">3월</option>
+								<option value="4">4월</option>
+								<option value="5">5월</option>
+								<option value="6">6월</option>
+								<option value="7">7월</option>
+								<option value="8">8월</option>
+								<option value="9">9월</option>
+								<option value="10">10월</option>
+								<option value="11">11월</option>
+								<option value="12">12월</option>
+							</select> 
+						</div>
+						<div class="col g-0">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm month" aria-describedby="dayHelpInline">
+								<option selected>day</option>
+								<option value="1">1일</option>
+								<option value="2">2일</option>
+								<option value="3">3일</option>
+								<option value="4">4일</option>
+								<option value="5">5일</option>
+								<option value="6">6일</option>
+								<option value="7">7일</option>
+								<option value="8">8일</option>
+								<option value="9">9일</option>
+								<option value="10">10일</option>
+								<option value="11">11일</option>
+								<option value="12">12일</option>
+								<option value="13">13일</option>
+								<option value="14">14일</option>
+								<option value="15">15일</option>
+								<option value="16">16일</option>
+								<option value="17">17일</option>
+								<option value="18">18일</option>
+								<option value="19">19일</option>
+								<option value="20">20일</option>
+								<option value="21">21일</option>
+								<option value="22">22일</option>
+								<option value="23">23일</option>
+								<option value="24">24일</option>
+								<option value="25">25일</option>
+								<option value="26">26일</option>
+								<option value="27">27일</option>
+								<option value="28">28일</option>
+								<option value="29">29일</option>
+								<option value="30">30일</option>
+								<option value="31">31일</option>
+							</select>
+						</div>
+					</div>
+					<form class="row g-1 border align-items-center">
+						<div class="col-2 p-2 border">
+							<label for="inputTel" class="form-label">휴대폰번호</label>
+						</div>
+						<div class="col-1 p-2">
+							<div class="input-group">
 								<select class="form-select form-select-sm" aria-label=".form-select-sm">
 									<option value="1">010</option>
 									<option value="2">011</option>
 								</select>
 							</div>
-							<div class="col-auto px-2">
-								<input type="text" id="inputTel" class="form-control" aria-describedby="teltHelpInline" autocomplete="off">
+						</div>
+						<div class="col-3 p-1">
+							<div class="input-group">
+								<div class="input-group-text">-</div>
+								<input type="text" class="form-control form-control-sm" id="inputTel" aria-describedby="telHelpInline" autocomplete="off">
 							</div>
-							<div class="col-auto px-2">
-								<span id="telHelpInline" class="form-text">-</span>
-							</div>
-							<div class="col-auto px-2">
-								<input type="text" id="inputTel2" class="form-control" aria-describedby="tel2HelpInline" autocomplete="off">
+						</div>	
+						<div class="col-3 p-1">
+							<div class="input-group">
+								<div class="input-group-text">-</div>
+								<input type="text" class="form-control form-control-sm" id="inputTel2" aria-describedby="telHelpInline" autocomplete="off">
 							</div>
 						</div>
-						<span class="d-block p-2 border" style="height: 56px;">
-							<input class="form-check-input" type="radio" name="smsMarketing" id="smsAd" checked>
-							수신함
-							<input class="form-check-input" type="radio" name="smsMarketing" id="smsNoAd">
-							수신안함
-						</span>
-						<div class="row g-0 align-items-center border" style="height: 56px;">
-							<div class="col-5 px-2">
-								<input type="text" id="inputEmail" class="form-control" aria-describedby="emailHelpInline" autocomplete="off">
+						<div class="col-3 p-2">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="smsOk">
+								<label class="form-check-label" for="smsOk">
+									SMS 수신 동의
+								</label>
 							</div>
-							<div class="col-1 px-2">
-								<span id="emailHelpInline" class="form-conltrol">@</span>
+						</div>
+					</form>
+					<form class="row g-1 border align-items-center">
+						<div class="col-2 p-2 border">
+							<label for="inputEmail" class="form-label">이메일 주소</label>
+						</div>
+						<div class="col p-2 border">
+							<div class="input-group">
+								<input type="text" class="form-control" id="inputEmail" aria-describedby="emailHelpInline">
 							</div>
-							<div class="col-6 px-2">
+						</div>
+						<div class="col p-2 border">
+							<div class="input-group">
+								<div class="input-group-text">@</div>
 								<select class="form-select" aria-label=".form-select email">
 									<option selected>email address</option>
 									<option value="1">gmail.com</option>
 									<option value="2">naver.com</option>
-									<option vlaue="3">daum.net</option>
+									<option vlaue="3">daum.net</option>	
 								</select>
 							</div>
-						</div>	
-						<span class="d-block p-2 border" style="height: 56px;">
-							<input class="form-check-input" type="radio" name="emailMarketing" id="emailAd" checked>
-							수신함
-							<input class="form-check-input" type="radio" name="emailMarketing" id="emailNoAd">
-							수신안함
-						</span>	
-						<span class="d-block p-2 border">
-							<input type="text" class="form-control">
-						</span>
-						<span class="d-block p-2 border">
-							<input type="text" class="form-control">
-						</span>
+						</div>
+						<div class="col p-2 border">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="emailOk">
+								<label class="form-check-label" for="emailOk">
+									Email 수신 동의
+								</label>
+							</div>	
+						
+						</div>
+					
+					
+					
+					
+					</form>
+					
+						
+					<div class="col-3 g-0">
+				
+						<span class="d-block p-2 border align-self-center" style="height: 56px;">우편번호</span>
+						<span class="d-block p-2 border align-self-center" style="height: 56px;">주소</span>
 					</div>
+			
+			
+			
 					<div class="col-2 g-2">
 						<button type="button" class="btn btn-success">회원정보 저장</button>
 						<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdropLive">
