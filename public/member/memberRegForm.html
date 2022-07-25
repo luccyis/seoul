@@ -15,7 +15,7 @@
 	    <a class="navbar-brand" href="#">
 	      <img src="../image/megabox_light.png" alt="" width="200px" height="50"></a>
 	  <form class="d-flex" role="link">
-	  	<button class="btn btn-success me-2" type="button">로그인</button>
+	  	<button class="btn me-2" type="button" style="background-color: #3C2978; color: white;">로그인</button>
   	</form>
 	</nav><br>
 	<ul class="nav nav-tabs">
@@ -115,7 +115,7 @@
 			<form>
 				<div class="row">
 					<div class="col-12">
-						<span>
+						<span style="color: #3C2978;">
 							<i class="fa-solid fa-user-plus"></i>
 							회원추가
 						</span><hr>
@@ -123,7 +123,7 @@
 					</div><br>
 					<div class="row g-0">
 						<div class="col-3 g-0 border">
-							<input class="form-control" type="file" required id="image" aria-label="file example" accept="image/*" onchange="setThumbnail(event);">	
+							<input class="form-control" type="file" requiredid="image" aria-label="file example" accept="image/*" onchange="setThumbnail(event);">	
 							<div class="image_container"></div>
 							<i class="fa-solid fa-circle-user"></i>
 							프로필사진
@@ -333,6 +333,67 @@
 							</div>
 						</div>
 					</div>
+					<div class="row g-1 align-items-center">
+						<div class="col p-2">
+							<span style="color: #3C2978;">
+								부가정보
+							</span>
+						</div>
+					</div>
+					<div class="row g-1 border align-items-center">
+						<div class="col-3 p-2">
+							<span class="d-block align-self-center">선호극장</span>
+						</div>
+						<div class="col p-2">
+							<div class="row g-1 align-items-center">
+								<div class="col-1 p-2 border-start">
+									<label for="favTheater" class="form-label">1순위</label>
+								</div>
+								<div class="col p-2">
+									<select class="form-select" size="1" aria-label="regionTheater">
+										<option selected>1순위 지역선택</option>
+										<option value="1">서울</option>
+										<option value="2">경기</option>
+										<option value="3">강원</option>
+										<option value="4">충청</option>
+									</select>
+								</div>
+								<div class="col p-2">
+									<select class="form-select" size="1" aria-label="theaterselect">
+										<option selected>1순위 극장선택</option>
+										<option value="1">코엑스</option>
+										<option value="2">강남</option>
+										<option value="3">성수</option>
+										<option value="4">동대문</option>
+									</select>
+								</div>
+							</div>
+							<div class="row g-1 align-items-center">
+								<div class="col-1 p-2 border-start">
+									<label for="favTheater" class="form-label">2순위</label>
+								</div>
+								<div class="col p-2">
+									<select class="form-select" size="1" aria-label="regionTheater">
+										<option selected>2순위 지역선택</option>
+										<option value="1">서울</option>
+										<option value="2">경기</option>
+										<option value="3">강원</option>
+										<option value="4">충청</option>
+									</select>
+								</div>
+								<div class="col p-2">
+									<select class="form-select" size="1" aria-label="theaterselect">
+										<option selected>2순위 극장선택</option>
+										<option value="1">코엑스</option>
+										<option value="2">강남</option>
+										<option value="3">성수</option>
+										<option value="4">동대문</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+						
 		
 			
 					<div class="col-2 g-2">
@@ -359,7 +420,7 @@
 						</div>
 					</div>
 					<div class="col-2 g-2">	
-						<button type="button" class="btn btn-dark" onclick="location.href='memberList.html'">
+						<button type="button" class="btn" onclick="location.href='memberList.html'" style="background-color: #3C2978; color: white;">
 							목록으로
 						</button>
 					</div>
