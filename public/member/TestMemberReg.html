@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>KOH MYUNG JEE</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="container-fluid">
+	<nav class="navbar bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="">
+				<img src="../image/megabox_light.png" alt="" width="150px" class="d-inline-block align-text-top">
+				ABC Management System
+			</a>
+			<ul class="nav jusify-content-end">
+				<li>
+					<img src="../image/person.png" alt="">
+					<span class="navbar-text">
+						Tony Chang<br><small>Administrator</small>
+					</span>
+				</li>
+				<li class="d-flex nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">언어</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item">한국어</a></li>
+						<li><a class="dropdown-item">English</a></li>
+					</ul>
+				</li>
+			</ul>	
+		</div>
+	</nav>
+	<nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="">Navbar</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="">회원관리</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="">서비스관리</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="">로그관리</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="">시스템관리</a>
+					</li>	
+					<li class="nav-item">
+						<a class="nav-link" href="">시스템관리</a>
+					</li>			
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<h4>Code</h4>
+		<div class="row">
+			<div class="col-6 g-3">
+				<label for="inputId" class="col-form-label">아이디</label>
+				<input type="text" id="inputId" class="form-control" aria-describedby="idHelpInline" placeholder="영문(대소문자),숫자,특수문자0, 4~20자리 조합">
+			</div>
+		</div>	
+		<div class="row">
+			<div class="col-6 g-3">
+				<label for="inputPassword" class="col-form-label">비밀번호</label>
+				<input type="password" id="inputPassword" class="form-control" aria-describedby="pwHelpInline" placeholder="영문(대소문자),숫자,특수문자0, 4~20자리 조합">
+			</div>
+			<div class="col-6 g-3">
+				<label for="inputPwRe" class="col-form-label">비밀번호확인</label>
+				<input type="password" id="inputPwRe" class="form-control" aria-describedby="pwReHelpInline">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6 g-3">
+				<label for="inputName" class="col-form-label">이름</label>
+				<input type="text" id="inputName" class="form-control" aria-describedby="NmHelpInline">
+			</div>	
+			<div class="col-6 g-3">
+				<label for="inputEngnm" class="col-form-label">이름(영문)</label>
+				<input type="text" id="inputEngNm" class="form-control" aria-describedby="NmEngHelpInline">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6 g-3">
+				<label for="inputName" class="col-form-label">이름(영문)</label>
+				<input type="text" id="inputName" class="form-control" aria-describedby="nmHelpInline">
+			</div>	
+			<div class="col-6 g-3">
+				<label for="inputFName" class="col-form-label">성(영문)</label>
+				<input type="text" id="inputFName" class="form-control" aria-describedby="fNameHelpInline">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6 g-3">
+				<label for="inputGender" class="col-form-label">성별</label>
+				<select class="form-select">
+					<option selected>선택</option>
+					<option value="1">남</option>
+					<option value="2">여</option>
+					<option value="3">기타</option>
+				</select>
+			</div>		
+			<div class="col-6 g-3">
+				<label for="inputDob" class="col-form-label">생일</label>
+				<input type="text" id="inputDob" class="form-control" aria-describedby="dobHelpInline">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6 g-3">
+				<label for="inputEmail" class="col-form-label">이메일</label>
+				<input type="text" id="inputEmail" class="form-control" aria-describedby="emailHelpInline" placeholder="name@example.com">
+			</div>		
+			<div class="col-6 g-3">
+				<div class="form-check">
+					<div class="row">
+						<label for="emailOk" class="col-form-label">이메일 정보 마케팅 사용 동의</label>
+					</div>
+					<div class="row">
+						<div class="col-1">
+							<input class="form-check-input" type="checkbox" id="emailOk">
+						</div>
+						<div class="col-2">
+							<label class="form-check-label" for="emailOk">
+							동의합니다
+						</div>
+						
+					</div>
+				</div>
+			</div>	
+		</div>	
+	</div>
+</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/47516a9c09.js" crossorigin="anonymous"></script>
+</body>
+</html>
