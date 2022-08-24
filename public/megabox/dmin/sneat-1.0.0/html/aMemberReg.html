@@ -93,13 +93,13 @@
             </li>
 
             <!-- Layouts -->
-            <li class="menu-item active open">
+            <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="fa-solid fa-clapperboard"></i>&nbsp;
                 <div data-i18n="Layouts">영화</div>
               </a>
               <ul class="menu-sub">
-                <li class="menu-item active">
+                <li class="menu-item">
                   <a href="../html/aMovieList.html" class="menu-link">
                     <div data-i18n="Without menu">기본 정보</div>
                   </a>
@@ -150,14 +150,14 @@
               </ul>
             </li>
 
-            <li class="menu-item">
+            <li class="menu-item active open">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="fa-solid fa-user"></i>&nbsp;
                 <div data-i18n="Account Settings">회원</div>
               </a>
               <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="../html/aMemberList.html" class="menu-link">
+                <li class="menu-item active">
+                  <a href="../aMemberList.html" class="menu-link">
                     <div data-i18n="Account">회원 리스트</div>
                   </a>
                 </li>
@@ -283,147 +283,164 @@
 			<div class="content-wrapper">
 		<!-- Content -->	
 				<div class="container-xxl flex-grow-1 container-p-y">
-					<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">영화 /</span> 기본 정보 관리 </h4>
+					<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">회원 /</span>회원 리스트 </h4>
 					
 				<!-- 	Table -->
 					<div class="card">
-						<h5 class="card-header">영화 추가</h5>
+						<h5 class="card-header">회원 추가</h5>
 						<div class="card-body">
-							<div class="table-responsive text-nowrap">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>시퀸스</th>
-											<th>제목</th>
-											<th>영어제목</th>
-											<th>관람객 평점</th>
-											<th>예매순위</th>
-											<th>주요정보</th>
-											<th>상영타입</th>
-											<th>감독</th>
-											<th>출연진</th>
-											<th>장르</th>
-											<th>상영시간</th>
-											<th>등급</th>
-											<th>개봉일자</th>
-											<th>누적관객수</th>
-											<th>예고편</th>
-											<th>좋아요 수</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>1</td>
-											<td>헤어질 결심</td>
-											<td>Decision To Leave</td>
-											<td>9</td>
-											<td>2</td>
-											<td>산 정상에서 추락한 한 남자의 변사 사건.담당 형사 '해준'(박해일)은 사망자의...</td>
-											<td>2D, 2D ATMOS, 디지털가치봄</td>
-											<td>박찬욱</td>
-											<td>탕웨이, 박해일, 이정현, 박용우, 고경표, 김신영</td>
-											<td>드라마, 로맨스, 미스터리</td>
-											<td>138</td>
-											<td>15세이상관람가</td>
-											<td>2022-06-29</td>
-											<td>1644791</td>
-											<td>https://youtu.be/i50tT8n9fp8</td>
-											<td>1.7k</td>
-										</tr>
-										<tr>
-											<td>2</td>
-											<td>토르: 러브 앤 썬더</td>
-											<td>Thor: Love and Thunder</td>
-											<td>7.9</td>
-											<td>3</td>
-											<td>“신을 죽이는 자, 신이 상대한다!” 슈퍼 히어로 시절이여, 안녕! 이너피스를... </td>
-											<td>2D ATMOS(자막), 2D Dolby(자막), 2D(자막), 3D Dolby(</td>
-											<td>타이카 와이티티</td>
-											<td>크리스 헴스워스, 나탈리 포트만, 테사 톰슨, 크리스찬 베일, 타이카 와이티티</td>
-											<td>액션, 어드벤처, 판타지</td>
-											<td>119</td>
-											<td>12세이상관람가</td>
-											<td>2022-07-06</td>
-											<td>2707598</td>
-											<td>https://youtu.be/Dlfp3K11C_o</td>
-											<td>2.1k</td>
-										</tr>	
-										<tr>
-											<td>3</td>
-											<td>애프터 양</td>
-											<td>After Yang</td>
-											<td>7.3</td>
-											<td>4</td>
-											<td>함께 살던 안드로이드 인간 ‘양’이 어느 날 작동을 멈추자 제이크 가족은 그를... </td>
-											<td>2D, 2D ATMOS</td>
-											<td>코고나다</td>
-											<td>콜린파렐, 조디 터너-스미스, 저스틴 민, 말레아 엠마 찬드로위자야</td>
-											<td>드라마, SF</td>
-											<td>96</td>
-											<td>전체관람가</td>
-											<td>2022-06-01</td>
-											<td>38990</td>
-											<td>https://youtu.be/5OK4gAiTxnU</td>
-											<td>1.5k</td>
-										</tr>	
-										<tr>
-											<td>4</td>
-											<td>탑건: 매버릭</td>
-											<td>Top Gun: Maverick</td>
-											<td>9.7</td>
-											<td>1</td>
-											<td>한순간의 실수도 용납되지 않는 하늘 위, 가장 압도적인 비행이 시작된다!...</td>
-											<td>2D ATMOS(자막), 2D Dolby(자막), 2D(자막)</td>
-											<td>조셉 코신스키</td>
-											<td>톰 크루즈, 마일즈 텔러, 제니퍼 코넬리, 존 햄, 에드 해리스, 글렌 포웰, 제</td>
-											<td>액션</td>
-											<td>130</td>
-											<td>12세이상관람가</td>
-											<td>2022-06-22</td>
-											<td>6937098</td>
-											<td>https://youtu.be/Mrj9XACVJ8U</td>
-											<td>3.4k</td>
-										</tr>	
-									</tbody>	
-								</table>
-							</div>
-						</div>
-						<div class="card-footer">
-							<div class="col-12">
-								<div class="demo-inline-spacing">
-									<nav aria-lable="Page Navigation">
-										<ul class="pagination pagination-sm justify-content-center">
-											<li class="page-item prev">
-												<a class="page-link" href="javascript:void(0);">
-													<i class="tf-icon bx bx-chevrons-left"></i>
-                           						</a>
-				                            </li>
-				                            <li class="page-item active">
-				                              <a class="page-link" href="javascript:void(0);">1</a>
-				                            </li>
-				                            <li class="page-item">
-				                              <a class="page-link" href="javascript:void(0);">2</a>
-				                            </li>
-				                            <li class="page-item">
-				                              <a class="page-link" href="javascript:void(0);">3</a>
-				                            </li>
-				                            <li class="page-item">
-				                              <a class="page-link" href="javascript:void(0);">4</a>
-				                            </li>
-				                            <li class="page-item">
-				                              <a class="page-link" href="javascript:void(0);">5</a>
-				                            </li>
-				                            <li class="page-item next">
-				                            	<a class="page-link" href="javascript:void(0);">
-				                              		<i class="tf-icon bx bx-chevrons-right"></i>
-			                              		</a>
-				                            </li>
-				                          </ul>
-				                        </nav>	
+							<form>
+								<div class="row mb-3">
+									<label class="col-md-2 col-form-label" for="inputId">아이디</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control" id="inputId">
 									</div>
 								</div>
-							</div>
-						</div>	
+								<div class="row mb-3">
+									<label class="col-sm-2 col-form-label" for="inputPw">패스워드</label>
+									<div class="col-sm-10">
+										<input type="password" class="form-control" id="inputPw">
+									</div>
+								</div>
+								<div class="row mb-3">
+									<label class="col-sm-2 col-form-label" for="inputName">이름</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="inputName">
+									</div>
+								</div>
+								<div class="row mb-3">
+									<label class="col-sm-2 col-form-label" for="inputGender">성별</label>
+									<div class="col-sm-10">
+										<div class="form-check form-check-inline mt-3">
+											<input class="form-check-input" type="radio" value ="남" name="inputGender" id="inputGenderMale">
+											<label class="form-check-label" for="inputGenderMale">남</label>
+										</div>
+										<div class="form-check form-check-inline mt-3">	
+											<input class="form-check-input" type="radio" value ="여" name="inputGender" id="inputGenderFemale">
+											<label class="form-check-label" for="inputGenderFemale">여</label>
+										</div>
+										<div class="form-check form-check-inline mt-3">	
+											<input class="form-check-input" type="radio" value ="기타" name="inputGender" id="inputGenderOther">
+											<label class="form-check-label" for="inputGenderOther">기타</label>
+										</div>
+									</div>
+								</div>
+								<div class="row mb-3">
+									<label class="col-sm-2 col-form-label" for="inputGrade">등급</label>
+									<div class="col-sm-10">
+										<div class="form-check form-check-inline mt-3">
+											<input class="form-check-input" type="radio" value ="일반" name="inputGrade" id="gradeNomal">
+											<label class="form-check-label" for="gradeNomal">일반</label>
+										</div>
+										<div class="form-check form-check-inline mt-3">	
+											<input class="form-check-input" type="radio" value ="실버" name="inputGrade" id="gradeSilver">
+											<label class="form-check-label" for="gradeSilver">실버</label>
+										</div>
+										<div class="form-check form-check-inline mt-3">	
+											<input class="form-check-input" type="radio" value ="골드" name="inputGrade" id="gradeGold">
+											<label class="form-check-label" for="gradeGold">골드</label>
+										</div>
+										<div class="form-check form-check-inline mt-3">	
+											<input class="form-check-input" type="radio" value ="VIP" name="inputGrade" id="gradeVIP">
+											<label class="form-check-label" for="gradeVIP">VIP</label>
+										</div>
+									</div>
+								</div>
+								<div class="row mb-3">
+									<label class="col-sm-2 col-form-label" for="inputEmail">이메일</label>
+									<div class="col-sm-10">
+										<div class="input-group">
+											<input type="text" class="form-control" id="inputEmail" aria-describedby="inputEmailAddr">
+											<span class="input-group-text" id="inputEmailAddr">@</span>
+											<select class="form-select" id="inputEmailDomain">
+												<option selected>이메일주소</option>
+												<option value="1">gmail.com</option>
+												<option value="2">naver.com</option>
+												<option value="3">직접입력</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="row mb-3">
+									<label class="col-sm-2 col-form-label" for="inputPhone">휴대폰번호</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="inputPhone">
+									</div>
+								</div>
+								<div class="row mb-3">
+									<label class="col-sm-2 col-form-label" for="inputDob">생년월일</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="inputDob">
+									</div>
+								</div>
+								<div class="row mb-3">
+									<label class="col-sm-2 col-form-label" for="inputEmailNy">이메일수신동의</label>
+									<div class="col-sm-10">
+										<div class="form-check form-check-inline mt-3">
+											<input class="form-check-input" type="radio" value ="동의" name="inputEmailNy" id="emailYes">
+											<label class="form-check-label" for="EmailYes">동의</label>
+										</div>
+										<div class="form-check form-check-inline mt-3">	
+											<input class="form-check-input" type="radio" value ="동의안함" name="inputEmailNy" id="emailNo">
+											<label class="form-check-label" for="EmailNo">동의안함</label>
+										</div>
+									</div>
+								</div>	
+								<div class="row mb-3">
+									<label class="col-sm-2 col-form-label" for="inputSmsNy">SMS수신동의</label>
+									<div class="col-sm-10">
+										<div class="form-check form-check-inline mt-3">
+											<input class="form-check-input" type="radio" value ="동의" name="inputSmsNy" id="smsYes">
+											<label class="form-check-label" for="smsYes">동의</label>
+										</div>
+										<div class="form-check form-check-inline mt-3">	
+											<input class="form-check-input" type="radio" value ="동의안함" name="inputSmsNy" id="smsNo">
+											<label class="form-check-label" for="smsNo">동의안함</label>
+										</div>
+									</div>
+								</div>	
+								<div class="row mb-3">
+									<label class="col-sm-2 col-form-label" for="inputDobLogin">생년월일 로그인</label>
+									<div class="col-sm-10">
+										<div class="form-check form-check-inline mt-3">
+											<input class="form-check-input" type="radio" value ="동의" name="inputDobLogin" id="dobLoginY">
+											<label class="form-check-label" for="dobLoginY">동의</label>
+										</div>
+										<div class="form-check form-check-inline mt-3">	
+											<input class="form-check-input" type="radio" value ="동의안함" name="inputDobLogin" id="dobLoginN">
+											<label class="form-check-label" for="dobLoginN">동의안함</label>
+										</div>
+									</div>
+								</div>
+								<div class="row mb-3">
+									<label class="col-sm-2 col-form-label" for="inputSnsLogin">SNS 로그인</label>
+									<div class="col-sm-10">
+										<div class="form-check form-check-inline mt-3">
+											<input class="form-check-input" type="checkbox" value ="페이스북" id="loginFacebook">
+											<label class="form-check-label" for="loginFacebook">페이스북</label>
+										</div>	
+										<div class="form-check form-check-inline mt-3">
+											<input class="form-check-input" type="checkbox" value ="네이버" id="loginNaver">
+											<label class="form-check-label" for="loginNaver">네이버</label>
+										</div>	
+										<div class="form-check form-check-inline mt-3">
+											<input class="form-check-input" type="checkbox" value ="카카오" id="loginKakao">
+											<label class="form-check-label" for="loginKakao">카카오</label>
+										</div>	
+									</div>
+								</div>	
+								
+							
+							
+							
+							
+							
+							
+							
+							</form>
+							
+							
+							
 						<div class="demo-inline-spacing">
 							<button type="button" class="btn btn-primary">
 								<i class="fa-solid fa-file-arrow-down"></i>
