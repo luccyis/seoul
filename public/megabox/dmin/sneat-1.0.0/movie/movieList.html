@@ -428,16 +428,28 @@
 							<button type="button" class="btn btn-primary">
 								<i class="fa-solid fa-file-arrow-down"></i>
 							</button>
-							<button type="button" class="btn btn-success">
+							<button type="button" class="btn btn-success" onclick="location.href='../movie/movieReg.html'">
 								<i class="fa-solid fa-plus"></i>
 							</button>
-							<button type="button" class="btn btn-danger">
+							<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-targer="#backDropModal">
 								<i class="fa-solid fa-minus"></i>
 							</button>
 						</div>
-					
-					
-					</div>
+						<div class="modal fade" id="backDropModal" data-bs-backdrop="static" tabindex="-1">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="backDropModalTitle">삭제</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">정말 삭제하시겠습니까?</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">닫기</button>
+										<button type="button" class="btn btn-danger">삭제</button>
+									</div>
+								</div>	
+							</div>
+						</div>
 				
 				
 				
