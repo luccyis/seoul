@@ -175,12 +175,12 @@
                 <div data-i18n="Authentications">시스템</div>
               </a>
               <ul class="menu-sub">
-                <li class="menu-item active">
+                <li class="menu-item">
                   <a href="../system/ccgList.html" class="menu-link">
                     <div data-i18n="Basic">코드 그룹 관리</div>
                   </a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a href="../system/ccList.html" class="menu-link">
                     <div data-i18n="Basic">코드 관리</div>
                   </a>
@@ -283,153 +283,113 @@
 			<div class="content-wrapper">
 		<!-- Content -->	
 				<div class="container-xxl flex-grow-1 container-p-y">
-					<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">시스템 /</span> 코드 그룹 관리 </h4>
+					<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">시스템 /</span> 코드 관리 </h4>
 					
 				<!-- 	Table -->
 					<div class="card">
-						<h5 class="card-header">코드 그룹 관리 </h5>
+						<h5 class="card-header">코드 관리 </h5>
 						<div class="card-body">
-							<div class="table-responsive text-nowrap">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>
-												<div class="form-check g-2">
-													<input class="form-check-input" type="checkbox" value="" id="listCheck">
-												</div>
-											</th>
-											<th>시퀸스</th>
-											<th>코드그룹 코드</th>
-											<th>코드그룹 이름(한글)</th>
-											<th>코드그룹 이름(영문)</th>
-											<th>코드개수</th>
-											<th>등록일</th>
-											<th>수정일</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>
-												<div class="form-check g-2">
-													<input class="form-check-input" type="checkbox" value="" id="listCheck">
-												</div>
-											</td>	
-											<td>1</td>
-											<td></td>
-											<td>회원.sns로그인</td>
-											<td>snsLogin</td>
-											<td></td>
-											<td></td>
-											<td></td>
-										</tr>
-										<tr>
-											<td>
-												<div class="form-check g-2">
-													<input class="form-check-input" type="checkbox" value="" id="listCheck">
-												</div>
-											</td>
-											<td>2</td>
-											<td></td>
-											<td>회원.이메일</td>
-											<td>email</td>
-											<td></td>
-											<td></td>
-											<td></td>
-											
-										</tr>	
-										<tr>
-											<td>
-												<div class="form-check g-2">
-													<input class="form-check-input" type="checkbox" value="" id="listCheck">
-												</div>
-											</td>
-											<td>3</td>
-											<td></td>
-											<td>회원.등급</td>
-											<td>grade</td>
-											<td></td>
-											<td></td>
-											<td></td>
-										</tr>	
-										<tr>
-											<td>
-												<div class="form-check g-2">
-													<input class="form-check-input" type="checkbox" value="" id="listCheck">
-												</div>
-											</td>
-											<td>4</td>
-											<td></td>
-											<td>회원.성별</td>
-											<td>gender</td>
-											<td></td>
-											<td></td>
-											<td></td>
-										</tr>	
-									</tbody>	
-								</table>
-							</div>
-						</div>
-						<div class="card-footer">
-							<div class="col-12">
-								<div class="demo-inline-spacing">
-									<nav aria-lable="Page Navigation">
-										<ul class="pagination pagination-sm justify-content-center">
-											<li class="page-item prev">
-												<a class="page-link" href="javascript:void(0);">
-													<i class="tf-icon bx bx-chevrons-left"></i>
-                           						</a>
-				                            </li>
-				                            <li class="page-item active">
-				                              <a class="page-link" href="javascript:void(0);">1</a>
-				                            </li>
-				                            <li class="page-item">
-				                              <a class="page-link" href="javascript:void(0);">2</a>
-				                            </li>
-				                            <li class="page-item">
-				                              <a class="page-link" href="javascript:void(0);">3</a>
-				                            </li>
-				                            <li class="page-item">
-				                              <a class="page-link" href="javascript:void(0);">4</a>
-				                            </li>
-				                            <li class="page-item">
-				                              <a class="page-link" href="javascript:void(0);">5</a>
-				                            </li>
-				                            <li class="page-item next">
-				                            	<a class="page-link" href="javascript:void(0);">
-				                              		<i class="tf-icon bx bx-chevrons-right"></i>
-			                              		</a>
-				                            </li>
-				                          </ul>
-				                        </nav>	
-									</div>
+							<div class="row">
+								<div class="col-6 p-2">
+									<label for="codeUseNy" class="form-label">사용여부</label>
+									<select id="useNy" class="form-select">
+										<option>선택하세요</option>
+										<option value="1" selected>Y</option>
+										<option value="2">N</option>
+									</select>
 								</div>
 							</div>
-						</div>	
-						<div class="demo-inline-spacing">
-							<button type="button" class="btn btn-primary">
-								<i class="fa-solid fa-file-arrow-down"></i>
-							</button>
-							<button type="button" class="btn btn-success" onclick="location.href='codeGroupForm.html'">
-								<i class="fa-solid fa-plus"></i>
-							</button>
-							<button type="button" class="btn btn-danger">
-								<i class="fa-solid fa-minus"></i>
-							</button>
+							<div class="row">
+								<div class="col p-2">
+									<label for="commonCode" class="form-label">코드</label>
+									<input type="text" class="form-control" id="commonCode" placeholder="자동생성" disabled>
+								</div>
+								<div class="col p-2">
+									<label for="commonCodeAnother" class="form-label">코드(Another)</label>
+									<input type="text" class="form-control" id="commonCodeAnother">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col p-2">
+									<label for="codeNameKo" class="form-label">코드 이름(한글)</label>
+									<input type="text" class="form-control" id="codeNameKo">
+								</div>
+								<div class="col p-2">
+									<label for="codeNameEng" class="form-label">코드 이름(영문)</label>
+									<input type="text" class="form-control" id="codeNameEng">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col p-2">
+									<label for="useNy" class="form-label">사용여부</label>
+									<select id="useNy" class="form-select">
+										<option value="1" selected>Y</option>
+										<option value="2">N</option>
+									</select>
+								</div>
+								<div class="col p-2">
+									<label for="codeOrder" class="form-label">순서</label>
+									<input type="text" class="form-control" id="codeOrder" placeholder="숫자">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col p-2">
+									<label for="codeExplain" class="form-label">설명</label>
+ 									<textarea class="form-control" id="codeExplain" row="3"></textarea>
+								</div>
+								<div class="col p-2">
+									<label for="delNy" class="form-label">삭제여부</label>
+									<select id="delNy" class="form-select">
+										<option value="1" selected>N</option>
+										<option value="2">Y</option>
+									</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col p-2">
+									<label for="codeOthers" class="form-label">예비 (varchar type)</label>
+									<input type="text" class="form-control" id="codeOthers" placeholder="영문(대소문자), 숫자">
+								</div>
+								<div class="col p-2">
+									<label for="codeOthers2" class="form-label">예비2 (varchar type)</label>
+									<input type="text" class="form-control" id="codeOthers2" placeholder="영문(대소문자), 숫자">
+								</div>
+							</div>	
+							<div class="row">
+								<div class="col p-2">
+									<label for="codeOthersInt" class="form-label">예비 (Int type)</label>
+									<input type="text" class="form-control" id="codeOthersInt" placeholder="숫자">
+								</div>
+								<div class="col p-2">
+									<label for="codeOthersInt2" class="form-label">예비2 (Int type)</label>
+									<input type="text" class="form-control" id="codeOthersInt2" placeholder="숫자">
+								</div>
+							</div>	
+					
 						</div>
-					
-					
+						<div class="row">
+							<div class="col-6">
+								<div class="demo-inline-spacing">
+									<button type="button" class="btn btn-primary" onclick="location.href='ccList.html'">
+										<i class="fa-solid fa-bars"></i>
+									</button>
+								</div>
+							</div>	
+							<div class="col-6 d-flex flex-row-reverse">
+								<div class="demo-inline-spacing">
+									<button type="button" class="btn btn-success">
+										<i class="fa-solid fa-arrow-up-from-bracket"></i>
+									</button>
+									<button type="button" class="btn btn-danger">
+										<i class="fa-solid fa-minus"></i>
+									</button>
+									<button type="button" class="btn btn-danger">
+										<i class="fa-solid fa-trash-can"></i>
+									</button>	
+								</div>
+							</div>
+						</div>		
 					</div>
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
 				</div>
 
        
