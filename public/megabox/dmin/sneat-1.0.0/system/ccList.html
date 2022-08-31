@@ -378,7 +378,7 @@
 											<td></td>
 											<td></td>
 											<td>일반</td>
-											<td></td>
+											<td>nomal</td>
 											<td>Y</td>
 											<td>1</td>
 											<td></td>
@@ -396,7 +396,7 @@
 											<td></td>
 											<td></td>
 											<td>실버</td>
-											<td></td>
+											<td>silver</td>
 											<td>Y</td>
 											<td>1</td>
 											<td></td>
@@ -414,7 +414,7 @@
 											<td></td>
 											<td></td>
 											<td>골드</td>
-											<td></td>
+											<td>gold</td>
 											<td>Y</td>
 											<td>1</td>
 											<td></td>
@@ -432,7 +432,7 @@
 											<td></td>
 											<td></td>
 											<td>VIP</td>
-											<td></td>
+											<td>VIP</td>
 											<td>Y</td>
 											<td>1</td>
 											<td></td>
@@ -450,7 +450,7 @@
 											<td></td>
 											<td></td>
 											<td>gmail.com</td>
-											<td></td>
+											<td>gmail.com</td>
 											<td>Y</td>
 											<td>1</td>
 											<td></td>
@@ -468,7 +468,7 @@
 											<td></td>
 											<td></td>
 											<td>naver.com</td>
-											<td></td>
+											<td>naver.com</td>
 											<td>Y</td>
 											<td>1</td>
 											<td></td>
@@ -504,7 +504,7 @@
 											<td></td>
 											<td></td>
 											<td>페이스북</td>
-											<td></td>
+											<td>Facebook</td>
 											<td>Y</td>
 											<td>1</td>
 											<td></td>
@@ -522,7 +522,7 @@
 											<td></td>
 											<td></td>
 											<td>네이버</td>
-											<td></td>
+											<td>Naver</td>
 											<td>Y</td>
 											<td>1</td>
 											<td></td>
@@ -540,7 +540,7 @@
 											<td></td>
 											<td></td>
 											<td>카카오</td>
-											<td></td>
+											<td>Kakao</td>
 											<td>Y</td>
 											<td>1</td>
 											<td></td>
@@ -593,9 +593,24 @@
 							<button type="button" class="btn btn-success" onclick="location.href='codeForm.html'">
 								<i class="fa-solid fa-plus"></i>
 							</button>
-							<button type="button" class="btn btn-danger">
+							<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#backDropModal">
 								<i class="fa-solid fa-minus"></i>
 							</button>
+						</div>
+						<div class="modal fade" id="backDropModal" data-bs-backdrop="static" tabindex="-1">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="backDropModalTitle">삭제</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">정말 삭제하시겠습니까?</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">닫기</button>
+										<button type="button" class="btn btn-danger">삭제</button>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
