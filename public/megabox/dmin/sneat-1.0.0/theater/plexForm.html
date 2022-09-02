@@ -127,13 +127,13 @@
                 <div data-i18n="Layouts">극장</div>
               </a>
               <ul class="menu-sub">
-                <li class="menu-item active">
-                  <a href="" class="menu-link">
+                <li class="menu-item">
+                  <a href="../theater/theaterList.html" class="menu-link">
                     <div data-i18n="Without menu">극장 정보</div>
                   </a>
                 </li>
-                <li class="menu-item">
-                  <a href="" class="menu-link">
+                <li class="menu-item active">
+                  <a href="../theater/plexList.html" class="menu-link">
                     <div data-i18n="Without navbar">상영관</div>
                   </a>
                 </li>
@@ -283,129 +283,71 @@
 			<div class="content-wrapper">
 		<!-- Content -->	
 				<div class="container-xxl flex-grow-1 container-p-y">
-					<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">극장 /</span> 기본 정보 관리 </h4>
+					<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">극장 /</span> 상영관 관리 </h4>
 					
 				<!-- 	Table -->
 					<div class="card">
-						<h5 class="card-header">극장 리스트</h5>
+						<h5 class="card-header">상영관 정보 추가</h5>
 						<div class="card-body">
-							<div class="table-responsive text-nowrap">
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>
-												<div class="form-check g-2">
-													<input class="form-check-input" type="checkbox" id="theaterListCheck" value="">	
-												</div>
-											</th>	
-											<th>#</th>
-											<th>지역</th>
-											<th>지점</th>
-											<th>주소</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>
-												<div class="form-check g-2">
-													<input class="form-check-input" type="checkbox" id="theaterListCheck" value="">	
-												</div>
-											</td>
-											<td>1</td>
-											<td>서울</td>
-											<td>코엑스</td>
-											<td>서울시 강남구 봉은사로524 B1(삼성동,코엑스몰)</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="form-check g-2">
-													<input class="form-check-input" type="checkbox" id="theaterListCheck" value="">	
-												</div>
-											</td>
-											<td>2</td>
-											<td>서울</td>
-											<td>성수</td>
-											<td>서울특별시 성동구 왕십리로 50</td>
-										</tr>	
-										<tr>
-											<td>
-												<div class="form-check g-2">
-													<input class="form-check-input" type="checkbox" id="theaterListCheck" value="">	
-												</div>
-											</td>
-											<td>3</td>
-											<td>서울</td>
-											<td>동대문</td>
-											<td>서울 중구 장충단로 247 굿모닝시티9층</td>
-										</tr>	
-									</tbody>	
-								</table>
-							</div>
-						</div>
-						<div class="card-footer">
-							<div class="col-12">
-								<div class="demo-inline-spacing">
-									<nav aria-lable="Page Navigation">
-										<ul class="pagination pagination-sm justify-content-center">
-											<li class="page-item prev">
-												<a class="page-link" href="javascript:void(0);">
-													<i class="tf-icon bx bx-chevrons-left"></i>
-                           						</a>
-				                            </li>
-				                            <li class="page-item active">
-				                              <a class="page-link" href="javascript:void(0);">1</a>
-				                            </li>
-				                            <li class="page-item">
-				                              <a class="page-link" href="javascript:void(0);">2</a>
-				                            </li>
-				                            <li class="page-item">
-				                              <a class="page-link" href="javascript:void(0);">3</a>
-				                            </li>
-				                            <li class="page-item">
-				                              <a class="page-link" href="javascript:void(0);">4</a>
-				                            </li>
-				                            <li class="page-item">
-				                              <a class="page-link" href="javascript:void(0);">5</a>
-				                            </li>
-				                            <li class="page-item next">
-				                            	<a class="page-link" href="javascript:void(0);">
-				                              		<i class="tf-icon bx bx-chevrons-right"></i>
-			                              		</a>
-				                           </li>
-				                        </ul>
-				                      </nav>	
-									</div>
+							<div class="row">
+								<div class="col-6 p-2">
+									<label for="plexCode" class="form-label">코드</label>
+									<input type="text" class="form-control" id="plexCode" placeholder="자동생성" disabled>
 								</div>
 							</div>
-						</div>	
-						<div class="demo-inline-spacing">
-							<button type="button" class="btn btn-primary">
-								<i class="fa-solid fa-file-arrow-down"></i>
-							</button>
-							<button type="button" class="btn btn-success" onclick="location.href='../movie/movieReg.html'">
-								<i class="fa-solid fa-plus"></i>
-							</button>
-							<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#backDropModal">
-								<i class="fa-solid fa-minus"></i>
-							</button>
-						</div>
-						<div class="modal fade" id="backDropModal" data-bs-backdrop="static" tabindex="-1">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="backDropModalTitle">삭제</h5>
-										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-									</div>
-									<div class="modal-body">정말 삭제하시겠습니까?</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">닫기</button>
-										<button type="button" class="btn btn-danger">삭제</button>
-									</div>
-								</div>	
+							<div class="row">
+								<div class="col p-2">
+									<label for="selectTheater" class="form-label">극장선택</label>
+									<select id="selectTheater" class="form-select">
+										<option value="">코엑스</option>
+										<option value="">성수</option>
+										<option value="">동대문</option>
+									</select>
+								</div>
+								<div class="col p-2">
+									<label for="inputPlex" class="form-label">상영관이름</label>
+									<input type="text" class="form-control" id="inputPlex">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col p-2">
+									<label for="inputtotalSeatNum" class="form-label">총 좌석수</label>
+									<input type="text" class="form-control" id="inputtotalSeatNum">
+								</div>
+								<div class="col p-2">
+									<label for="inputSittingColNum" class="form-label">세로 좌석수(col)</label>
+									<input type="text" class="form-control" id="inputSittingColNum">
+								</div>
+								<div class="col p-2">
+									<label for="inputSittingRowNum" class="form-label">가로 좌석수(row)</label>
+									<input type="text" class="form-control" id="inputSittingRowNum">
+								</div>
 							</div>
 						</div>
+						<div class="row">
+							<div class="col-6">
+								<div class="demo-inline-spacing">
+									<button type="button" class="btn btn-primary" onclick="location.href='plexList.html'">
+										<i class="fa-solid fa-bars"></i>
+									</button>
+								</div>
+							</div>	
+							<div class="col-6 d-flex flex-row-reverse">
+								<div class="demo-inline-spacing">
+									<button type="button" class="btn btn-danger">
+										<i class="fa-solid fa-xmark"></i>
+									</button>
+									<button type="button" class="btn btn-danger">
+										<i class="fa-solid fa-trash-can"></i>
+									</button>
+									<button type="button" class="btn btn-success">
+										<i class="fa-solid fa-arrow-up-from-bracket"></i>
+									</button>	
+								</div>
+							</div>
+						</div>		
 					</div>
-
+				</div>	
        
             <!-- / Content -->
 
