@@ -93,7 +93,7 @@
             </li>
 
             <!-- Layouts -->
-            <li class="menu-item active open">
+            <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="fa-solid fa-clapperboard"></i>&nbsp;
                 <div data-i18n="Layouts">영화</div>
@@ -104,13 +104,13 @@
                     <div data-i18n="Without menu">기본 정보</div>
                   </a>
                 </li>
-                <li class="menu-item active">
+                <li class="menu-item">
                   <a href="../movie/movieTimetable.html" class="menu-link">
                     <div data-i18n="Without navbar">상영시간표</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="../movie/moviePostList.html" class="menu-link">
+                  <a href="" class="menu-link">
                     <div data-i18n="Container">무비포스트</div>
                   </a>
                 </li>
@@ -128,7 +128,7 @@
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="../theater/theaterList.html" class="menu-link">
+                  <a href="" class="menu-link">
                     <div data-i18n="Without menu">극장 정보</div>
                   </a>
                 </li>
@@ -150,7 +150,7 @@
               </ul>
             </li>
 
-            <li class="menu-item">
+            <li class="menu-item active open">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="fa-solid fa-user"></i>&nbsp;
                 <div data-i18n="Account Settings">회원</div>
@@ -161,7 +161,7 @@
                     <div data-i18n="Account">회원 리스트</div>
                   </a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a href="" class="menu-link">
                     <div data-i18n="Notifications">결제 관리</div>
                   </a>
@@ -174,14 +174,14 @@
                 <i class="fa-solid fa-gear"></i>&nbsp;
                 <div data-i18n="Authentications">시스템</div>
               </a>
-               <ul class="menu-sub">
+              <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="../system/ccgList.html" class="menu-link" target="_blank">
+                  <a href="../system/ccgList.html" class="menu-link">
                     <div data-i18n="Basic">공통 코드 그룹 관리</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="../system/ccList.html" class="menu-link" target="_blank">
+                  <a href="../system/ccList.html" class="menu-link">
                     <div data-i18n="Basic">공통 코드 관리</div>
                   </a>
                 </li>
@@ -283,269 +283,46 @@
 			<div class="content-wrapper">
 		<!-- Content -->	
 				<div class="container-xxl flex-grow-1 container-p-y">
-					<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">영화 /</span> 상영 시간표 관리 </h4>
+					<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">회원 /</span>결제 관리 </h4>
 					
 				<!-- 	Table -->
 					<div class="card">
-						<h5 class="card-header">상영 시간표</h5>
+						<h5 class="card-header">결제 리스트 </h5>
 						<div class="card-body">
 							<div class="table-responsive text-nowrap">
 								<table class="table table-bordered">
 									<thead>
 										<tr>
 											<th>#</th>
-											<th>seq</th>
-											<th>영화제목</th>
-											<th>극장</th>
-											<th>상영관</th>
-											<th>시간</th>
-											<th>조조여부</th>
+											<th>시퀸스</th>
+											<th>아이디 seq </th>
+											<th>상영시간표 seq</th>
+											<th>결제수단</th>
+											<th>금액</th>
+											<th>결제일</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
 											<td>1</td>
 											<td>1</td>
-											<td>탑건: 매버릭</td>
-											<td>코엑스</td>
 											<td>1</td>
-											<td>2022-08-02 09:40</td>
-											<td>1</td>
-										</tr>	
-										<tr>
-											<td>2</td>
-											<td>2</td>
-											<td>탑건: 매버릭</td>
-											<td>코엑스</td>
-											<td>1</td>
-											<td>2022-08-02 13:50</td>
-											<td>0</td>
-										</tr>
-										<tr>
-											<td>3</td>
-											<td>3</td>
-											<td>애프터 양</td>
-											<td>코엑스</td>
-											<td>1</td>
-											<td>2022-08-02 20:40</td>
-											<td>0</td>
-										</tr>	
-										<tr>
-											<td>4</td>
-											<td>4</td>
-											<td>헤어질 결심</td>
-											<td>코엑스</td>
-											<td>2</td>
-											<td>2022-08-02 08:20</td>
-											<td>1</td>
-										</tr>
-										<tr>
-											<td>5</td>
-											<td>5</td>
-											<td>헤어질 결심</td>
-											<td>코엑스</td>
-											<td>2</td>
-											<td>2022-08-02 12:50</td>
-											<td>0</td>
-										</tr>
-										<tr>
-											<td>6</td>
-											<td>6</td>
-											<td>헤어질 결심</td>
-											<td>코엑스</td>
-											<td>2</td>
-											<td>2022-08-02 17:10</td>
-											<td>0</td>
-										</tr>
-										<tr>
-											<td>7</td>
-											<td>7</td>
-											<td>토르</td>
-											<td>코엑스</td>
-											<td>3</td>
-											<td>2022-08-02 09:00</td>
-											<td>1</td>
-										</tr>
-										<tr>
-											<td>8</td>
-											<td>8</td>
-											<td>토르</td>
-											<td>코엑스</td>
-											<td>3</td>
-											<td>2022-08-02 13:00</td>
-											<td>0</td>
-										</tr>
-										<tr>
-											<td>9</td>
-											<td>9</td>
-											<td>토르</td>
-											<td>코엑스</td>
-											<td>3</td>
-											<td>2022-08-02 19:10</td>
-											<td>0</td>
-										</tr>
-										<tr>
-											<td>10</td>
-											<td>10</td>
-											<td>애프터 양</td>
-											<td>성수</td>
-											<td>4</td>
-											<td>2022-08-02 09:20</td>
-											<td>1</td>
-										</tr>	
-										<tr>
 											<td>11</td>
-											<td>11</td>
-											<td>애프터 양</td>
-											<td>성수</td>
-											<td>4</td>
-											<td>2022-08-02 15:30</td>
-											<td>0</td>
+											<td>카카오페이</td>
+											<td></td>
+											<td>2022-08-02 10:30:00</td>
+							
 										</tr>
 										<tr>
-											<td>12</td>
-											<td>12</td>
-											<td>토르</td>
-											<td>성수</td>
-											<td>4</td>
-											<td>2022-08-02 20:10</td>
-											<td>0</td>
-										</tr>
-										<tr>
-											<td>13</td>
-											<td>13</td>
-											<td>토르</td>
-											<td>성수</td>
-											<td>5</td>
-											<td>2022-08-02 12:15</td>
-											<td>0</td>
-										</tr>
-										<tr>
-											<td>14</td>
-											<td>14</td>
-											<td>헤어질 결심</td>
-											<td>성수</td>
-											<td>5</td>
-											<td>2022-08-02 16:55</td>
-											<td>0</td>
-										</tr>
-										<tr>
-											<td>15</td>
-											<td>15</td>
-											<td>헤어질 결심</td>
-											<td>성수</td>
-											<td>5</td>
-											<td>2022-08-02 21:10</td>
-											<td>0</td>
-										</tr>
-										<tr>
-											<td>16</td>
-											<td>16</td>
-											<td>탑건: 매버릭</td>
-											<td>성수</td>
-											<td>6</td>
-											<td>2022-08-02 07:30</td>
-											<td>1</td>
-										</tr>
-										<tr>
-											<td>17</td>
-											<td>17</td>
-											<td>탑건: 매버릭</td>
-											<td>성수</td>
-											<td>6</td>
-											<td>2022-08-02 12:40</td>
-											<td>0</td>
-										</tr>
-										<tr>
-											<td>18</td>
-											<td>18</td>
-											<td>탑건: 매버릭</td>
-											<td>성수</td>
-											<td>6</td>
-											<td>2022-08-02 18:20</td>
-											<td>0</td>
-										</tr>
-										<tr>
-											<td>19</td>
-											<td>19</td>
-											<td>헤어질 결심</td>
-											<td>동대문</td>
-											<td>7</td>
-											<td>2022-08-02 09:30</td>
-											<td>1</td>
-										</tr>
-										<tr>
-											<td>20</td>
-											<td>20</td>
-											<td>헤어질 결심</td>
-											<td>동대문</td>
-											<td>7</td>
-											<td>2022-08-02 14:40</td>
-											<td>0</td>
-										</tr>
-										<tr>
-											<td>21</td>
-											<td>21</td>
-											<td>헤어질 결심</td>
-											<td>동대문</td>
-											<td>7</td>
-											<td>2022-08-02 17:55</td>
-											<td>0</td>
-										</tr>
-										<tr>
-											<td>22</td>
-											<td>22</td>
-											<td>탑건: 매버릭</td>
-											<td>동대문</td>
-											<td>8</td>
-											<td>2022-08-02 08:30</td>
-											<td>1</td>
-										</tr>
-										<tr>
-											<td>23</td>
-											<td>23</td>
-											<td>탑건: 매버릭</td>
-											<td>동대문</td>
-											<td>8</td>
-											<td>2022-08-02 13:40</td>
-											<td>0</td>
-										</tr>
-										<tr>
-											<td>24</td>
-											<td>24</td>
-											<td>헤어질 결심</td>
-											<td>동대문</td>
-											<td>8</td>
-											<td>2022-08-02 19:00</td>
-											<td>0</td>
-										</tr>
-										<tr>
-											<td>25</td>
-											<td>25</td>
-											<td>토르</td>
-											<td>동대문</td>
-											<td>9</td>
-											<td>2022-08-02 11:20</td>
-											<td>0</td>
-										</tr>
-										<tr>
-											<td>26</td>
-											<td>26</td>
-											<td>애프터 양</td>
-											<td>동대문</td>
-											<td>9</td>
-											<td>2022-08-02 15:40</td>
-											<td>0</td>
-										</tr>
-										<tr>
+											<td>2</td>
+											<td>2</td>
+											<td>2</td>
 											<td>27</td>
-											<td>27</td>
-											<td>애프터 양</td>
-											<td>동대문</td>
-											<td>9</td>
-											<td>2022-08-02 20:10</td>
-											<td>0</td>
-										</tr>
+											<td>카카오페이</td>
+											<td></td>
+											<td>2022-08-02 16:55:00</td>
+										</tr>	
+									
 									</tbody>	
 								</table>
 							</div>
@@ -590,27 +367,29 @@
 							<button type="button" class="btn btn-primary">
 								<i class="fa-solid fa-file-arrow-down"></i>
 							</button>
-							<button type="button" class="btn btn-success" onclick="location.href='../movie/timeTableForm.html'">
+							<button type="button" class="btn btn-success" onclick="location.href=''">
 								<i class="fa-solid fa-plus"></i>
 							</button>
-							<button type="button" class="btn btn-danger">
+							<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#backDropModal">
 								<i class="fa-solid fa-minus"></i>
 							</button>
 						</div>
-					
-					
-					</div>
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
+						<div class="modal fade" id="backDropModal" data-bs-backdrop="static" tabindex="-1">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="backDropModalTitle">삭제</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">정말 삭제하시겠습니까?</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">닫기</button>
+										<button type="button" class="btn btn-danger">삭제</button>
+									</div>
+								</div>	
+							</div>
+						</div>
+
 				</div>
 
        
