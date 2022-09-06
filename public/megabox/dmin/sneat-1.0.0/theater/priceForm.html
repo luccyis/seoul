@@ -121,24 +121,24 @@
                 </li>
               </ul>
             </li>
-            <li class="menu-item">
+            <li class="menu-item active open">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="fa-solid fa-film"></i>&nbsp;
                 <div data-i18n="Layouts">극장</div>
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="" class="menu-link">
+                  <a href="../theater/theaterList.html" class="menu-link">
                     <div data-i18n="Without menu">극장 정보</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="" class="menu-link">
+                  <a href="../theater/plexList.html" class="menu-link">
                     <div data-i18n="Without navbar">상영관</div>
                   </a>
                 </li>
-                <li class="menu-item">
-                  <a href="" class="menu-link">
+                <li class="menu-item active">
+                  <a href="../theater/pirceList.html" class="menu-link">
                     <div data-i18n="Container">관람료</div>
                   </a>
                 </li>
@@ -150,19 +150,19 @@
               </ul>
             </li>
 
-            <li class="menu-item active open">
+            <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="fa-solid fa-user"></i>&nbsp;
                 <div data-i18n="Account Settings">회원</div>
               </a>
               <ul class="menu-sub">
-                <li class="menu-item active">
+                <li class="menu-item">
                   <a href="../member/memberList.html" class="menu-link">
                     <div data-i18n="Account">회원 리스트</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="" class="menu-link">
+                  <a href="../member/bookingHistory.html" class="menu-link">
                     <div data-i18n="Notifications">결제 관리</div>
                   </a>
                 </li>
@@ -174,14 +174,14 @@
                 <i class="fa-solid fa-gear"></i>&nbsp;
                 <div data-i18n="Authentications">시스템</div>
               </a>
-              <ul class="menu-sub">
+               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="../system/ccgList.html" class="menu-link">
+                  <a href="../system/ccgList.html" class="menu-link" target="_blank">
                     <div data-i18n="Basic">공통 코드 그룹 관리</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="../system/ccList.html" class="menu-link">
+                  <a href="../system/ccList.html" class="menu-link" target="_blank">
                     <div data-i18n="Basic">공통 코드 관리</div>
                   </a>
                 </li>
@@ -283,300 +283,151 @@
 			<div class="content-wrapper">
 		<!-- Content -->	
 				<div class="container-xxl flex-grow-1 container-p-y">
-					<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">회원 /</span>회원 리스트 </h4>
-					
+					<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">극장 /</span> 관람료 </h4>
+
 				<!-- 	Table -->
 					<div class="card">
-						<h5 class="card-header">회원 리스트 </h5>
-						<div class="card-body">
-							<div class="table-responsive text-nowrap">
+						<h5 class="card-header">영화 관람료 정보 추가</h5>
+						<form>
+							<div class="card-body">
+								<div class="row">
+									<div class="col-4 p-2">
+										<label class="form-label" for="priceSelectTheater">극장 선택</label>
+										<select class="form-select" id="priceSelectTheater">
+											<option value="1">코엑스</option>
+											<option value="2">성수</option>
+											<option value="3">동대문</option>
+										</select>
+									</div>
+								</div>
+								<div class="table-responsive text-nowrap">
 								<table class="table table-bordered">
 									<thead>
 										<tr>
-											<th>
-												<div class="form-check g-2">
-													<input type="checkbox" class="form-check-input">
-												</div>
-											</th>
-											<th>시퀸스</th>
-											<th>아이디 </th>
-											<th>패스워드 </th>
-											<th>이름 </th>
-											<th>성별 </th>
-											<th>등급</th>
-											<th>이메일주소</th>
-											<th>이메일도메인</th>
-											<th>핸드폰번호</th>
-											<th>생년월일</th>
-											<th>이메일수신동의</th>
-											<th>SMS수신동의</th>
-											<th>생년월일로그인</th>
-											<th>sns로그인</th>
+											<th>요일</th>
+											<th>상영시간</th>
+											<th>일반</th>
+											<th>청소년</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
+											<td rowspan="2">주중</td>
+											<td>조조</td>
 											<td>
-												<div class="form-check g-2">
-													<input type="checkbox" class="form-check-input">
-												</div>
+												<label for="inputPrice" class="form-label">가격</label>
+												<input type="text" class="form-control" id="inputPrice">
 											</td>
-											<td>1</td>
-											<td>mjee08</td>
-											<td></td>
-											<td>고명지</td>
-											<td>2</td>
-											<td>7</td>
-											<td>mungjee08@naver.com</td>
-											<td>9</td>
-											<td>1024452344</td>
-											<td>1994-06-08</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>13</td>
+											<td>
+												<label for="inputPrice" class="form-label">가격</label>
+												<input type="text" class="form-control" id="inputPrice">
+											</td>
 										</tr>
 										<tr>
+											<!-- <td>월~목</td> -->
+											<td>일반</td>
 											<td>
-												<div class="form-check g-2">
-													<input type="checkbox" class="form-check-input">
-												</div>
+												<label for="inputPrice" class="form-label">가격</label>
+												<input type="text" class="form-control" id="inputPrice">
 											</td>
-											<td>2</td>
-											<td>wldnj322</td>
-											<td></td>
-											<td>박지원</td>
-											<td>2</td>
-											<td>6</td>
-											<td>wldnj322@naver.com</td>
-											<td>9</td>
-											<td>1009867870</td>
-											<td>1996-11-20</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>12</td>
-										</tr>	
-										<tr>
 											<td>
-												<div class="form-check g-2">
-													<input type="checkbox" class="form-check-input">
-												</div>
+												<label for="inputPrice" class="form-label">가격</label>
+												<input type="text" class="form-control" id="inputPrice">
 											</td>
-											<td>3</td>
-											<td>dlwlrma</td>
-											<td></td>
-											<td>아이유</td>
-											<td>2</td>
-											<td>5</td>
-											<td>iu@naver.com</td>
-											<td>9</td>
-											<td>1020220918</td>
-											<td>1993-05-07</td>
-											<td>0</td>
-											<td>0</td>
-											<td>1</td>
-											<td>0</td>
-										</tr>	
-										<tr>
-											<td>
-												<div class="form-check g-2">
-													<input type="checkbox" class="form-check-input">
-												</div>
-											</td>
-											<td>4</td>
-											<td>doorjh</td>
-											<td></td>
-											<td>이준호</td>
-											<td>1</td>
-											<td>4</td>
-											<td>juun@gmial.com</td>
-											<td>8</td>
-											<td>1029872345</td>
-											<td>1990-10-20</td>
-											<td>0</td>
-											<td>0</td>
-											<td>1</td>
-											<td>13</td>
 										</tr>
 										<tr>
+											<td rowspan="2">주말<br>공휴일</td>
+											<td>조조</td>
 											<td>
-												<div class="form-check g-2">
-													<input type="checkbox" class="form-check-input">
-												</div>
+												<label for="inputPrice" class="form-label">가격</label>
+												<input type="text" class="form-control" id="inputPrice">
 											</td>
-											<td>5</td>
-											<td>whales</td>
-											<td></td>
-											<td>우영우</td>
-											<td>2</td>
-											<td>4</td>
-											<td>whales@naver.com</td>
-											<td>9</td>
-											<td>1020220729</td>
-											<td>1992-08-14</td>
-											<td>0</td>
-											<td>0</td>
-											<td>1</td>
-											<td>13</td>
+											<td>
+												<label for="inputPrice" class="form-label">가격</label>
+												<input type="text" class="form-control" id="inputPrice">
+											</td>
 										</tr>
 										<tr>
+											<!-- <td>금~일<br>공휴일</td> -->
+											<td>일반</td>
 											<td>
-												<div class="form-check g-2">
-													<input type="checkbox" class="form-check-input">
-												</div>
+												<label for="inputPrice" class="form-label">가격</label>
+												<input type="text" class="form-control" id="inputPrice">
 											</td>
-											<td>6</td>
-											<td>springsunshine</td>
-											<td></td>
-											<td>최수연</td>
-											<td>2</td>
-											<td>4</td>
-											<td>springsun@gmial.com</td>
-											<td>8</td>
-											<td>1076634889</td>
-											<td>1992-09-12</td>
-											<td>0</td>
-											<td>1</td>
-											<td>1</td>
-											<td>12</td>
-										</tr>
-										<tr>
 											<td>
-												<div class="form-check g-2">
-													<input type="checkbox" class="form-check-input">
-												</div>
+												<label for="inputPrice" class="form-label">가격</label>
+												<input type="text" class="form-control" id="inputPrice">
 											</td>
-											<td>7</td>
-											<td>kwonmosulsu</td>
-											<td></td>
-											<td>권민우</td>
-											<td>1</td>
-											<td>7</td>
-											<td>kwon22@gmial.com</td>
-											<td>8</td>
-											<td>1024983455</td>
-											<td>1991-04-05</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>0</td>
 										</tr>
-										<tr>
-											<td>
-												<div class="form-check g-2">
-													<input type="checkbox" class="form-check-input">
-												</div>
-											</td>
-											<td>8</td>
-											<td>circledong</td>
-											<td></td>
-											<td>동그라미</td>
-											<td>2</td>
-											<td>5</td>
-											<td>circle0@naver.com</td>
-											<td>9</td>
-											<td>1079829877</td>
-											<td>1992-09-16</td>
-											<td>0</td>
-											<td>0</td>
-											<td>0</td>
-											<td>13</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="form-check g-2">
-													<input type="checkbox" class="form-check-input">
-												</div>
-											</td>
-											<td>9</td>
-											<td>myeonsuk</td>
-											<td></td>
-											<td>정명석</td>
-											<td>1</td>
-											<td>6</td>
-											<td>briliant@gmial.com</td>
-											<td>8</td>
-											<td>1023988777</td>
-											<td>1981-06-14</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>0</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="form-check g-2">
-													<input type="checkbox" class="form-check-input">
-												</div>
-											</td>
-											<td>10</td>
-											<td>bigsea3</td>
-											<td></td>
-											<td>태수미</td>
-											<td>2</td>
-											<td>4</td>
-											<td>bigsea233@gmial.com</td>
-											<td>8</td>
-											<td>1023355589</td>
-											<td>1973-12-23</td>
-											<td>1</td>
-											<td>1</td>
-											<td>0</td>
-											<td>0</td>
-										</tr>
-											
 									</tbody>	
 								</table>
 							</div>
-						</div>
-						<div class="card-footer">
-							<div class="col-12">
-								<div class="demo-inline-spacing">
-									<nav aria-lable="Page Navigation">
-										<ul class="pagination pagination-sm justify-content-center">
-											<li class="page-item prev">
-												<a class="page-link" href="javascript:void(0);">
-													<i class="tf-icon bx bx-chevrons-left"></i>
-                           						</a>
-				                            </li>
-				                            <li class="page-item active">
-				                              <a class="page-link" href="javascript:void(0);">1</a>
-				                            </li>
-				                            <li class="page-item">
-				                              <a class="page-link" href="javascript:void(0);">2</a>
-				                            </li>
-				                            <li class="page-item">
-				                              <a class="page-link" href="javascript:void(0);">3</a>
-				                            </li>
-				                            <li class="page-item">
-				                              <a class="page-link" href="javascript:void(0);">4</a>
-				                            </li>
-				                            <li class="page-item">
-				                              <a class="page-link" href="javascript:void(0);">5</a>
-				                            </li>
-				                            <li class="page-item next">
-				                            	<a class="page-link" href="javascript:void(0);">
-				                              		<i class="tf-icon bx bx-chevrons-right"></i>
-			                              		</a>
-				                            </li>
-				                          </ul>
-				                        </nav>	
+								
+							
+								
+							</div>
+						
+							<div class="card-footer">
+								<div class="col-12">
+									<div class="demo-inline-spacing">
+										<nav aria-lable="Page Navigation">
+											<ul class="pagination pagination-sm justify-content-center">
+												<li class="page-item prev">
+													<a class="page-link" href="javascript:void(0);">
+														<i class="tf-icon bx bx-chevrons-left"></i>
+	                           						</a>
+					                            </li>
+					                            <li class="page-item active">
+					                              <a class="page-link" href="javascript:void(0);">1</a>
+					                            </li>
+					                            <li class="page-item">
+					                              <a class="page-link" href="javascript:void(0);">2</a>
+					                            </li>
+					                            <li class="page-item">
+					                              <a class="page-link" href="javascript:void(0);">3</a>
+					                            </li>
+					                            <li class="page-item">
+					                              <a class="page-link" href="javascript:void(0);">4</a>
+					                            </li>
+					                            <li class="page-item">
+					                              <a class="page-link" href="javascript:void(0);">5</a>
+					                            </li>
+					                            <li class="page-item next">
+					                            	<a class="page-link" href="javascript:void(0);">
+					                              		<i class="tf-icon bx bx-chevrons-right"></i>
+				                              		</a>
+					                           </li>
+					                        </ul>
+					                      </nav>	
+										</div>
 									</div>
 								</div>
-							</div>
+							</form>	
 						</div>	
-						<div class="demo-inline-spacing">
-							<button type="button" class="btn btn-primary">
-								<i class="fa-solid fa-file-arrow-down"></i>
-							</button>
-							<button type="button" class="btn btn-success" onclick="location.href='../member/memberForm.html'">
-								<i class="fa-solid fa-plus"></i>
-							</button>
-							<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#backDropModal">
-								<i class="fa-solid fa-minus"></i>
-							</button>
-						</div>
+						
+						
+						<div class="row">
+							<div class="col-6">
+								<div class="demo-inline-spacing">
+									<button type="button" class="btn btn-primary" onclick="location.href='priceList.html'">
+										<i class="fa-solid fa-bars"></i>
+									</button>
+								</div>
+							</div>	
+							<div class="col-6 d-flex flex-row-reverse">
+								<div class="demo-inline-spacing">
+									<button type="button" class="btn btn-danger">
+										<i class="fa-solid fa-xmark"></i>
+									</button>
+									<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#backDropModal">
+										<i class="fa-solid fa-trash-can"></i>
+									</button>
+									<button type="button" class="btn btn-success">
+										<i class="fa-solid fa-arrow-up-from-bracket"></i>
+									</button>	
+								</div>
+							</div>
+						</div>		
 						<div class="modal fade" id="backDropModal" data-bs-backdrop="static" tabindex="-1">
 							<div class="modal-dialog">
 								<div class="modal-content">
@@ -592,8 +443,7 @@
 								</div>	
 							</div>
 						</div>
-
-				</div>
+					</div>
 
        
             <!-- / Content -->
