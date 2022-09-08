@@ -290,95 +290,98 @@
 						<h5 class="card-header">영화 정보 추가</h5>
 						<div class="card-body">
 							<form>
-								<div class="row mb-3">
-									<label class="col-md-2 col-form-label" for="inputMovieTitle">제목</label>
-									<div class="col-md-10">
-										<input type="text" class="form-control" id="inputMovieTitle">
+								<div class="row">
+									<div class="col p-2">
+										<label class="form-label" for="inputMovieTitle">제목</label>
+										<input type="text" class="form-control" id="inputMovieTitle" name="">
+									</div>
+									<div class="col p-2">
+										<label class="form-label" for="inputTitleEng">영어제목</label>
+										<input type="text" class="form-control" id="inputTitleEng" name="">
 									</div>
 								</div>
-								<div class="row mb-3">
-									<label class="col-md-2 col-form-label" for="inputTitleEng">영어제목</label>
-									<div class="col-md-10">
-										<input type="text" class="form-control" id="inputTitleEng">
+								<div class="row">
+									<div class="col p-2">
+										<label class="form-label" for="inputAudienceScore">관람객평점</label>
+										<input type="text" class="form-control" id="inputAudienceScore" name="">
+									</div>
+									<div class="col p-2">
+										<label class="form-label" for="inputRank">예매율</label>
+										<input type="text" class="form-control" id="inputRank" name="">
 									</div>
 								</div>
-								<div class="row mb-3">
-									<label class="col-md-2 col-form-label" for="inputAudienceScore">관람객평점</label>
-									<div class="col-md-10">
-										<input type="text" class="form-control" id="inputAudienceScore">
-									</div>
-								</div>
-								<div class="row mb-3">
-									<label class="col-md-2 col-form-label" for="inputRank">예매율</label>
-									<div class="col-md-10">
-										<input type="text" class="form-control" id="inputRank">
-									</div>
-								</div>
-								<div class="row mb-3">
-									<label class="col-md-2 col-form-label" for="inputStory">스토리</label>
-									<div class="col-md-10">
+								<div class="row">
+									<div class="col p-2">
+										<label class="form-label" for="inputStory">스토리</label>
 										<textarea class="form-control" id="inputStory" row="7"></textarea>
 									</div>
-								</div>
-								<div class="row mb-3">
-									<label class="col-md-2 col-form-label" for="inputShowType">상영타입</label>
-									<div class="col-md-10">
-										<input type="text" class="form-control" id="inputShowType">
+									<div class="col p-2">
+										<label class="form-label" for="inputShowType">상영타입</label>
+										<input type="text" class="form-control" id="inputShowType" name="">
 									</div>
 								</div>
-								<div class="row mb-3">
-									<label class="col-md-2 col-form-label" for="inputDirector">감독</label>
-									<div class="col-md-10">
-										<input type="text" class="form-control" id="inputDirector">
+								<div class="row">
+									<div class="col p-2">
+										<label class="form-label" for="inputDirector">감독</label>
+										<input type="text" class="form-control" id="inputDirector" name="">
+									</div>
+									<div class="col p-2">
+										<label class="form-label" for="inputCast">출연진</label>
+										<input type="text" class="form-control" id="inputCast" name="">
 									</div>
 								</div>
-								<div class="row mb-3">
-									<label class="col-md-2 col-form-label" for="inputCast">출연진</label>
-									<div class="col-md-10">
-										<input type="text" class="form-control" id="inputCast">
+								<div class="row">
+									<div class="col p-2">
+										<label class="form-label" for="inputGenres">장르</label>
+										<input type="text" class="form-control" id="inputGenres" name="">
+									</div>
+									<div class="col p-2">
+										<label class="form-label" for="inputRunningTime">상영시간</label>	
+										<input type="text" class="form-control" id="inputRunningTime" name="">
 									</div>
 								</div>
-								<div class="row mb-3">
-									<label class="col-md-2 col-form-label" for="inputGenres">장르</label>
-									<div class="col-md-10">
-										<input type="text" class="form-control" id="inputGenres">
+								<div class="row">
+									<div class="col p-2">
+										<label class="form-label" for="inputReleaseDate">개봉일</label>
+										<input type="text" class="form-control" id="inputReleaseDate" name="">
+									</div>
+									<div class="col p-2">
+										<label class="form-label" for="inputAudienceNumber">누적관람자수</label>
+										<input type="text" class="form-control" id="inputAudienceNumber" name="">
 									</div>
 								</div>
-								<div class="row mb-3">
-									<label class="col-md-2 col-form-label" for="inputRunningTime">상영시간</label>
-									<div class="col-md-10">
-										<input type="text" class="form-control" id="inputRunningTime">
+								<div class="row">
+									<div class="col p-2">
+										<label class="form-label" for="inputTrailer">예고편</label>
+										<input type="text" class="form-control" id="inputTrailer" name="" placeholder="url">
+									</div>
+									<div class="col p-2">
+										<label class="form-label" for="inputLiked">좋아요</label>
+										<input type="text" class="form-control" id="inputLiked" name="">
 									</div>
 								</div>
-								<div class="row mb-3">
-									<label class="col-md-2 col-form-label" for="inputReleaseDate">개봉일</label>
-									<div class="col-md-10">
-										<input type="text" class="form-control" id="inputReleaseDate">
-									</div>
+								<div class="row">
+							<div class="col-6">
+								<div class="demo-inline-spacing">
+									<button type="button" class="btn btn-primary" onclick="href='../movie/movieList.html''">
+										<i class="fa-solid fa-bars"></i>
+									</button>
 								</div>
-								<div class="row mb-3">
-									<label class="col-md-2 col-form-label" for="inputAudienceNumber">누적관람자수</label>
-									<div class="col-md-10">
-										<input type="text" class="form-control" id="inputAudienceNumber">
-									</div>
+							</div>	
+							<div class="col-6 d-flex flex-row-reverse">
+								<div class="demo-inline-spacing">
+									<button type="button" class="btn btn-danger">
+										<i class="fa-solid fa-xmark"></i>
+									</button>
+									<button type="button" class="btn btn-danger" >
+										<i class="fa-solid fa-trash-can"></i>
+									</button>
+									<button type="button" class="btn btn-success">
+										<i class="fa-solid fa-arrow-up-from-bracket"></i>
+									</button>	
 								</div>
-								<div class="row mb-3">
-									<label class="col-md-2 col-form-label" for="inputTrailer">예고편</label>
-									<div class="col-md-10">
-										<input type="text" class="form-control" id="inputTrailer">
-									</div>
-								</div>
-								<div class="row mb-3">
-									<label class="col-md-2 col-form-label" for="inputLiked">좋아요</label>
-									<div class="col-md-10">
-										<input type="text" class="form-control" id="inputLiked">
-									</div>
-								</div>
-								
-								<button type="submit" class="btn btn-primary">제출</button>
-								<button type="button" class="btn btn-dark" onclick="location.href='../movie/movieList.html'">
-									<i class="fa-solid fa-arrow-left"></i>
-								</button>	
+							</div>
+						</div>
 							</form>
 						</div>	
 					</div>

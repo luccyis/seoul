@@ -290,62 +290,67 @@
 						<h5 class="card-header">회원 추가</h5>
 						<div class="card-body">
 							<form>
-								<div class="row mb-3">
-									<label class="col-md-2 col-form-label" for="inputId">제목</label>
-									<div class="col-md-10">
-										<input type="text" class="form-control" id="inputId">
+								<div class="row">
+									<div class="col p-2">
+										<label class="form-label" for="inputId">아이디</label>
+										<input type="text" class="form-control" id="inputId" name="">
+									</div>
+									<div class="col p-2">
+										<label class="form-label" for="inputPw">패스워드</label>
+										<input type="password" class="form-control" id="inputPw" name="">
 									</div>
 								</div>
-								<div class="row mb-3">
-									<label class="col-sm-2 col-form-label" for="inputPw">패스워드</label>
-									<div class="col-sm-10">
-										<input type="password" class="form-control" id="inputPw">
+								<div class="row ">
+									<div class="col-6 p-2">
+										<label class="form-label" for="inputName">이름</label>
+										<input type="text" class="form-control" id="inputName" name="">
 									</div>
+									<div class="col-6 p-2">
+										<div class="col-12">
+											<label class="form-label" for="inputGender">성별</label>
+										</div>
+										<div class="col p-2">
+											<div class="form-check form-check-inline">	
+												<input class="form-check-input" type="radio" value ="남" name="inputGender" id="inputGenderMale">
+												<label class="form-check-label" for="inputGenderMale">남</label>
+											</div>	
+											<div class="form-check form-check-inline">		
+												<input class="form-check-input" type="radio" value ="여" name="inputGender" id="inputGenderFemale">
+												<label class="form-check-label" for="inputGenderFemale">여</label>
+											</div>	
+											<div class="form-check form-check-inline">		
+												<input class="form-check-input" type="radio" value ="기타" name="inputGender" id="inputGenderOther">
+												<label class="form-check-label" for="inputGenderOther">기타</label>
+											</div>
+										</div>	
+									</div>	
 								</div>
-								<div class="row mb-3">
-									<label class="col-sm-2 col-form-label" for="inputName">이름</label>
-									<div class="col-sm-10">
-										<input type="text" class="form-control" id="inputName">
-									</div>
+								<div class="row">
+									<div class="col-6 p-2">
+										<div class="col-12">
+											<label class="form-label" for="inputGrade">등급</label>
+										</div>
+										<div class="col p-2">
+											<div class="form-check form-check-inline">	
+												<input class="form-check-input" type="radio" value ="일반" name="inputGrade" id="gradeNomal">
+												<label class="form-check-label" for="gradeNomal">일반</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" value ="실버" name="inputGrade" id="gradeSilver">
+												<label class="form-check-label" for="gradeSilver">실버</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" value ="골드" name="inputGrade" id="gradeGold">
+												<label class="form-check-label" for="gradeGold">골드</label>
+											</div>	
+											<div class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" value ="VIP" name="inputGrade" id="gradeVIP">
+												<label class="form-check-label" for="gradeVIP">VIP</label>
+											</div>
+										</div>		
+									</div>		
 								</div>
-								<div class="row mb-3">
-									<label class="col-sm-2 col-form-label" for="inputGender">성별</label>
-									<div class="col-sm-10">
-										<div class="form-check form-check-inline mt-3">
-											<input class="form-check-input" type="radio" value ="남" name="inputGender" id="inputGenderMale">
-											<label class="form-check-label" for="inputGenderMale">남</label>
-										</div>
-										<div class="form-check form-check-inline mt-3">	
-											<input class="form-check-input" type="radio" value ="여" name="inputGender" id="inputGenderFemale">
-											<label class="form-check-label" for="inputGenderFemale">여</label>
-										</div>
-										<div class="form-check form-check-inline mt-3">	
-											<input class="form-check-input" type="radio" value ="기타" name="inputGender" id="inputGenderOther">
-											<label class="form-check-label" for="inputGenderOther">기타</label>
-										</div>
-									</div>
-								</div>
-								<div class="row mb-3">
-									<label class="col-sm-2 col-form-label" for="inputGrade">등급</label>
-									<div class="col-sm-10">
-										<div class="form-check form-check-inline mt-3">
-											<input class="form-check-input" type="radio" value ="일반" name="inputGrade" id="gradeNomal">
-											<label class="form-check-label" for="gradeNomal">일반</label>
-										</div>
-										<div class="form-check form-check-inline mt-3">	
-											<input class="form-check-input" type="radio" value ="실버" name="inputGrade" id="gradeSilver">
-											<label class="form-check-label" for="gradeSilver">실버</label>
-										</div>
-										<div class="form-check form-check-inline mt-3">	
-											<input class="form-check-input" type="radio" value ="골드" name="inputGrade" id="gradeGold">
-											<label class="form-check-label" for="gradeGold">골드</label>
-										</div>
-										<div class="form-check form-check-inline mt-3">	
-											<input class="form-check-input" type="radio" value ="VIP" name="inputGrade" id="gradeVIP">
-											<label class="form-check-label" for="gradeVIP">VIP</label>
-										</div>
-									</div>
-								</div>
+								
 								<div class="row mb-3">
 									<label class="col-sm-2 col-form-label" for="inputEmail">이메일</label>
 									<div class="col-sm-10">
